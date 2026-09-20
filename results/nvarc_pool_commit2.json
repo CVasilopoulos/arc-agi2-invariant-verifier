@@ -1,0 +1,343 @@
+{
+ "pool": "commit2",
+ "outputs": 5,
+ "tasks": 4,
+ "totals": {
+  "distinct": 35,
+  "wrong": 31,
+  "flagged": 1,
+  "flagged_wrong": 1,
+  "flagged_correct": 0
+ },
+ "scores": {
+  "0.0": {
+   "score": 3.0,
+   "tasks": 4,
+   "outputs_correct": 4,
+   "outputs_top2_changed": 0
+  },
+  "0.5": {
+   "score": 3.0,
+   "tasks": 4,
+   "outputs_correct": 4,
+   "outputs_top2_changed": 1
+  },
+  "1.0": {
+   "score": 3.0,
+   "tasks": 4,
+   "outputs_correct": 4,
+   "outputs_top2_changed": 1
+  },
+  "2.0": {
+   "score": 3.0,
+   "tasks": 4,
+   "outputs_correct": 4,
+   "outputs_top2_changed": 1
+  },
+  "inf": {
+   "score": 3.0,
+   "tasks": 4,
+   "outputs_correct": 4,
+   "outputs_top2_changed": 1
+  }
+ },
+ "rows": [
+  {
+   "output": "0934a4d8_0",
+   "beams": 20,
+   "distinct": 13,
+   "classes": {
+    "wrong_palette": 13
+   },
+   "correct_in_pool": false,
+   "correct_baseline_rank": null,
+   "kgmon_top3": [
+    -4.966,
+    -9.404,
+    -10.49
+   ],
+   "flagged": [],
+   "selection": {
+    "0.0": {
+     "top2_correct": false,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "0.5": {
+     "top2_correct": false,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "1.0": {
+     "top2_correct": false,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "2.0": {
+     "top2_correct": false,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "inf": {
+     "top2_correct": false,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "output": "36a08778_0",
+   "beams": 19,
+   "distinct": 6,
+   "classes": {
+    "correct": 1,
+    "wrong_content": 4,
+    "near_miss": 1
+   },
+   "correct_in_pool": true,
+   "correct_baseline_rank": 1,
+   "kgmon_top3": [
+    10.068,
+    -11.655,
+    -13.343
+   ],
+   "flagged": [],
+   "selection": {
+    "0.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "0.5": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "1.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "2.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "inf": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "output": "36a08778_1",
+   "beams": 20,
+   "distinct": 13,
+   "classes": {
+    "correct": 1,
+    "near_miss": 8,
+    "wrong_content": 4
+   },
+   "correct_in_pool": true,
+   "correct_baseline_rank": 1,
+   "kgmon_top3": [
+    -11.119,
+    -11.799,
+    -11.876
+   ],
+   "flagged": [
+    {
+     "baseline_rank": 2,
+     "class": "near_miss",
+     "hits": 4,
+     "kgmon": -11.799,
+     "violated": [
+      "keep_nonbg"
+     ]
+    }
+   ],
+   "selection": {
+    "0.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "0.5": {
+     "top2_correct": true,
+     "top2_changed": true,
+     "top2_baseline_ranks": [
+      1,
+      3
+     ]
+    },
+    "1.0": {
+     "top2_correct": true,
+     "top2_changed": true,
+     "top2_baseline_ranks": [
+      1,
+      3
+     ]
+    },
+    "2.0": {
+     "top2_correct": true,
+     "top2_changed": true,
+     "top2_baseline_ranks": [
+      1,
+      3
+     ]
+    },
+    "inf": {
+     "top2_correct": true,
+     "top2_changed": true,
+     "top2_baseline_ranks": [
+      1,
+      3
+     ]
+    }
+   }
+  },
+  {
+   "output": "981571dc_0",
+   "beams": 16,
+   "distinct": 1,
+   "classes": {
+    "correct": 1
+   },
+   "correct_in_pool": true,
+   "correct_baseline_rank": 1,
+   "kgmon_top3": [
+    15.999
+   ],
+   "flagged": [],
+   "selection": {
+    "0.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1
+     ]
+    },
+    "0.5": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1
+     ]
+    },
+    "1.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1
+     ]
+    },
+    "2.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1
+     ]
+    },
+    "inf": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1
+     ]
+    }
+   }
+  },
+  {
+   "output": "aa4ec2a5_0",
+   "beams": 16,
+   "distinct": 2,
+   "classes": {
+    "correct": 1,
+    "wrong_content": 1
+   },
+   "correct_in_pool": true,
+   "correct_baseline_rank": 1,
+   "kgmon_top3": [
+    6.585,
+    3.4
+   ],
+   "flagged": [],
+   "selection": {
+    "0.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "0.5": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "1.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "2.0": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    },
+    "inf": {
+     "top2_correct": true,
+     "top2_changed": false,
+     "top2_baseline_ranks": [
+      1,
+      2
+     ]
+    }
+   }
+  }
+ ]
+}

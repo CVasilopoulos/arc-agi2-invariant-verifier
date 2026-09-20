@@ -1,0 +1,14 @@
+pool commit2: 4 tasks, 5 test outputs, 91 beams, 35 distinct candidates (31 wrong)
+flagged 1: 1 wrong, 0 correct
+output       beams dist c_in c_rank flag  base   l=1  hard  chg1 kgmon_top3 classes
+0934a4d8_0      20   13 False   None    0 False False False False [-4.966, -9.404, -10.49] {'wrong_palette': 13}
+36a08778_0      19    6 True      1    0  True  True  True False [10.068, -11.655, -13.343] {'correct': 1, 'wrong_content': 4, 'near_miss': 1}
+36a08778_1      20   13 True      1    1  True  True  True  True [-11.119, -11.799, -11.876] {'correct': 1, 'near_miss': 8, 'wrong_content': 4}
+    flagged rank 2 near_miss hits=4 kgmon=-11.799 violated=['keep_nonbg']
+981571dc_0      16    1 True      1    0  True  True  True False [15.999] {'correct': 1}
+aa4ec2a5_0      16    2 True      1    0  True  True  True False [6.585, 3.4] {'correct': 1, 'wrong_content': 1}
+lambda= 0.0: task score 3.0/4, outputs correct 4/5, top-2 changed 0
+lambda= 0.5: task score 3.0/4, outputs correct 4/5, top-2 changed 1
+lambda= 1.0: task score 3.0/4, outputs correct 4/5, top-2 changed 1
+lambda= 2.0: task score 3.0/4, outputs correct 4/5, top-2 changed 1
+lambda= inf: task score 3.0/4, outputs correct 4/5, top-2 changed 1

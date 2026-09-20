@@ -1,0 +1,90 @@
+== agi2_train: 1000 tasks, 1076 test outputs
+   shape            active=  967 sound=0.986 decoy_pass=0.034 by_k={'2': [161, 152], '3': [530, 526], '4': [184, 183], '5': [92, 92]}
+   palette_exact    active=  895 sound=0.996 decoy_pass=0.007 by_k={'2': [146, 145], '3': [515, 512], '4': [161, 161], '5': [73, 73]}
+   palette_subset   active= 1076 sound=0.999 decoy_pass=0.172 by_k={'2': [164, 164], '3': [606, 605], '4': [205, 205], '5': [101, 101]}
+   palette_keep     active= 1076 sound=0.928 decoy_pass=0.195 by_k={'2': [164, 147], '3': [606, 562], '4': [205, 191], '5': [101, 99]}
+   hist_equal       active=   93 sound=1.000 decoy_pass=0.000 by_k={'2': [15, 15], '3': [56, 56], '4': [18, 18], '5': [4, 4]}
+   nonbg_equal      active=  224 sound=0.969 decoy_pass=0.008 by_k={'2': [41, 39], '3': [132, 130], '4': [42, 39], '5': [9, 9]}
+   nonbg_ge         active=  745 sound=0.996 decoy_pass=0.699 by_k={'2': [133, 132], '3': [429, 428], '4': [139, 138], '5': [44, 44]}
+   nonbg_le         active=  525 sound=0.985 decoy_pass=0.419 by_k={'2': [72, 70], '3': [291, 289], '4': [98, 94], '5': [64, 64]}
+   keep_nonbg       active=  273 sound=0.996 decoy_pass=0.000 by_k={'2': [60, 60], '3': [157, 156], '4': [42, 42], '5': [14, 14]}
+   keep_bg          active=  143 sound=0.951 decoy_pass=0.000 by_k={'2': [29, 27], '3': [86, 84], '4': [25, 22], '5': [3, 3]}
+   crop_of_input    active=   54 sound=0.981 decoy_pass=0.008 by_k={'2': [4, 4], '3': [34, 33], '4': [11, 11], '5': [5, 5]}
+   input_in_output  active=   45 sound=1.000 decoy_pass=0.002 by_k={'2': [4, 4], '3': [21, 21], '4': [11, 11], '5': [9, 9]}
+   sym_lr           active=   60 sound=0.983 decoy_pass=0.115 by_k={'2': [10, 10], '3': [34, 33], '4': [15, 15], '5': [1, 1]}
+   sym_ud           active=   51 sound=0.902 decoy_pass=0.086 by_k={'2': [13, 10], '3': [27, 25], '4': [11, 11]}
+   sym_rot180       active=   44 sound=0.977 decoy_pass=0.074 by_k={'2': [9, 9], '3': [29, 28], '4': [6, 6]}
+   sym_transpose    active=   40 sound=0.900 decoy_pass=0.074 by_k={'2': [7, 6], '3': [25, 22], '4': [3, 3], '5': [5, 5]}
+== agi2_eval: 120 tasks, 167 test outputs
+   shape            active=  128 sound=0.945 decoy_pass=0.033 by_k={'2': [34, 31], '3': [66, 62], '4': [17, 17], '5': [11, 11]}
+   palette_exact    active=  116 sound=0.991 decoy_pass=0.004 by_k={'2': [36, 35], '3': [53, 53], '4': [16, 16], '5': [11, 11]}
+   palette_subset   active=  167 sound=1.000 decoy_pass=0.232 by_k={'2': [48, 48], '3': [80, 80], '4': [26, 26], '5': [13, 13]}
+   palette_keep     active=  167 sound=0.838 decoy_pass=0.181 by_k={'2': [48, 37], '3': [80, 68], '4': [26, 23], '5': [13, 12]}
+   hist_equal       active=   10 sound=0.900 decoy_pass=0.000 by_k={'2': [3, 3], '3': [7, 6]}
+   nonbg_equal      active=   29 sound=0.966 decoy_pass=0.003 by_k={'2': [11, 11], '3': [16, 15], '4': [2, 2]}
+   nonbg_ge         active=   89 sound=0.978 decoy_pass=0.826 by_k={'2': [22, 22], '3': [48, 46], '4': [12, 12], '5': [7, 7]}
+   nonbg_le         active=   92 sound=0.978 decoy_pass=0.298 by_k={'2': [36, 36], '3': [41, 40], '4': [11, 10], '5': [4, 4]}
+   keep_nonbg       active=   29 sound=1.000 decoy_pass=0.000 by_k={'2': [5, 5], '3': [15, 15], '4': [4, 4], '5': [5, 5]}
+   keep_bg          active=   17 sound=1.000 decoy_pass=0.000 by_k={'2': [5, 5], '3': [11, 11], '4': [1, 1]}
+   crop_of_input    active=    0 sound=- decoy_pass=- by_k={}
+   input_in_output  active=    2 sound=1.000 decoy_pass=0.000 by_k={'5': [2, 2]}
+   sym_lr           active=    7 sound=0.714 decoy_pass=0.093 by_k={'2': [6, 4], '3': [1, 1]}
+   sym_ud           active=    6 sound=0.500 decoy_pass=0.058 by_k={'2': [4, 2], '3': [2, 1]}
+   sym_rot180       active=    3 sound=1.000 decoy_pass=0.050 by_k={'2': [2, 2], '3': [1, 1]}
+   sym_transpose    active=    3 sound=0.667 decoy_pass=0.033 by_k={'2': [2, 1], '4': [1, 1]}
+== agi1_eval: 400 tasks, 419 test outputs
+   shape            active=  376 sound=0.997 decoy_pass=0.024 by_k={'2': [44, 44], '3': [198, 197], '4': [81, 81], '5': [53, 53]}
+   palette_exact    active=  354 sound=0.997 decoy_pass=0.009 by_k={'2': [41, 41], '3': [193, 192], '4': [76, 76], '5': [44, 44]}
+   palette_subset   active=  419 sound=1.000 decoy_pass=0.228 by_k={'2': [45, 45], '3': [221, 221], '4': [92, 92], '5': [61, 61]}
+   palette_keep     active=  419 sound=0.955 decoy_pass=0.230 by_k={'2': [45, 42], '3': [221, 211], '4': [92, 88], '5': [61, 59]}
+   hist_equal       active=   31 sound=1.000 decoy_pass=0.000 by_k={'2': [2, 2], '3': [21, 21], '4': [6, 6], '5': [2, 2]}
+   nonbg_equal      active=   88 sound=0.966 decoy_pass=0.009 by_k={'2': [12, 12], '3': [54, 53], '4': [17, 15], '5': [5, 5]}
+   nonbg_ge         active=  285 sound=1.000 decoy_pass=0.663 by_k={'2': [40, 40], '3': [157, 157], '4': [59, 59], '5': [29, 29]}
+   nonbg_le         active=  210 sound=0.976 decoy_pass=0.505 by_k={'2': [17, 17], '3': [110, 108], '4': [48, 45], '5': [35, 35]}
+   keep_nonbg       active=  105 sound=1.000 decoy_pass=0.000 by_k={'2': [17, 17], '3': [58, 58], '4': [21, 21], '5': [9, 9]}
+   keep_bg          active=   72 sound=0.931 decoy_pass=0.000 by_k={'2': [10, 10], '3': [42, 40], '4': [17, 14], '5': [3, 3]}
+   crop_of_input    active=   18 sound=1.000 decoy_pass=0.011 by_k={'2': [1, 1], '3': [12, 12], '4': [3, 3], '5': [2, 2]}
+   input_in_output  active=   21 sound=1.000 decoy_pass=0.000 by_k={'2': [3, 3], '3': [6, 6], '4': [6, 6], '5': [6, 6]}
+   sym_lr           active=   20 sound=1.000 decoy_pass=0.085 by_k={'2': [5, 5], '3': [9, 9], '4': [6, 6]}
+   sym_ud           active=   17 sound=0.882 decoy_pass=0.056 by_k={'2': [7, 5], '3': [5, 5], '4': [5, 5]}
+   sym_rot180       active=   14 sound=1.000 decoy_pass=0.089 by_k={'2': [5, 5], '3': [5, 5], '4': [4, 4]}
+   sym_transpose    active=   26 sound=0.923 decoy_pass=0.102 by_k={'2': [5, 5], '3': [11, 9], '4': [6, 6], '5': [4, 4]}
+SAFE (chosen on ARC-AGI-2 training): ['palette_exact', 'palette_subset', 'hist_equal', 'nonbg_ge', 'keep_nonbg', 'input_in_output']
+   conj agi2_train: gt_pass=0.9916 (1067/1076) decoy_pass=0.041 by_k={'2': [164, 162], '3': [606, 600], '4': [205, 204], '5': [101, 101]} failures=[('19bb5feb', 0, ['palette_exact']), ('1be83260', 1, ['nonbg_ge']), ('2ccd9fef', 0, ['palette_exact']), ('39e1d7f9', 0, ['keep_nonbg']), ('6cbe9eb8', 0, ['palette_subset']), ('b1986d4b', 0, ['palette_exact']), ('b74ca5d1', 1, ['palette_exact']), ('d631b094', 0, ['nonbg_ge']), ('fc10701f', 0, ['nonbg_ge'])]
+   conj agi2_eval: gt_pass=0.9820 (164/167) decoy_pass=0.094 by_k={'2': [48, 47], '3': [80, 78], '4': [26, 26], '5': [13, 13]} failures=[('446ef5d2', 0, ['palette_exact']), ('581f7754', 0, ['hist_equal', 'nonbg_ge']), ('e376de54', 0, ['nonbg_ge'])]
+   conj agi1_eval: gt_pass=0.9976 (418/419) decoy_pass=0.045 by_k={'2': [45, 45], '3': [221, 220], '4': [92, 92], '5': [61, 61]} failures=[('19bb5feb', 0, ['palette_exact'])]
+== attempts v1: 73 models, 57854 attempt slots
+   taxonomy: {'correct': 32879, 'wrong_palette': 3010, 'wrong_content': 12954, 'wrong_shape': 3461, 'invalid': 1075, 'near_miss': 4475}
+   flagged by class: {'correct': '132/32879=0.004', 'wrong_palette': '1734/3010=0.576', 'wrong_content': '2173/12954=0.168', 'wrong_shape': '1318/3461=0.381', 'near_miss': '493/4475=0.110'}
+   veto shape            wrong 1913/21649  correct 54/29339
+   veto palette_exact    wrong 2096/20526  correct 132/27442
+   veto palette_subset   wrong 376/23900  correct 0/32879
+   veto palette_keep     wrong 2058/23900  correct 1500/32879
+   veto hist_equal       wrong 960/1895  correct 0/2327
+   veto nonbg_equal      wrong 1973/5420  correct 101/6460
+   veto nonbg_ge         wrong 1331/17275  correct 0/21331
+   veto nonbg_le         wrong 1154/11480  correct 269/16978
+   veto keep_nonbg       wrong 2262/6452  correct 0/7845
+   veto keep_bg          wrong 1299/4319  correct 269/5294
+   veto crop_of_input    wrong 349/919  correct 0/1536
+   veto input_in_output  wrong 152/731  correct 0/2144
+   veto sym_lr           wrong 512/979  correct 0/1764
+   veto sym_ud           wrong 366/787  correct 170/1553
+   veto sym_rot180       wrong 373/620  correct 0/1304
+   veto sym_transpose    wrong 792/1103  correct 149/2393
+   pass@1 verifier ordering: mean gain=0.0111 task-bootstrap=(0.011187254914572904, 0.009785931664876363, 0.012801148024779562) models improved=61 worse=0 of 73
+   swaps=1279 fixed=321 broken=0
+     gpt-5-4-pro-xhigh                             tasks=400 pass2=0.983 pass1=0.966 pass1_ver=0.966 swaps=0 fixed=0 broken=0
+     gpt-5-2-pro-2025-12-11-xhigh                  tasks=355 pass2=0.976 pass1=0.956 pass1_ver=0.965 swaps=3 fixed=3 broken=0
+     gemini-3-1-pro-preview                        tasks=398 pass2=0.972 pass1=0.967 pass1_ver=0.970 swaps=1 fixed=1 broken=0
+     claude-opus-4-8-max                           tasks=391 pass2=0.969 pass1=0.958 pass1_ver=0.965 swaps=4 fixed=3 broken=0
+     claude-opus-4-6-thinking-120K-max             tasks=400 pass2=0.968 pass1=0.951 pass1_ver=0.951 swaps=0 fixed=0 broken=0
+     grok-4.20-multi-agent-beta-0309-xhigh         tasks=399 pass2=0.967 pass1=0.947 pass1_ver=0.947 swaps=0 fixed=0 broken=0
+     claude-opus-4-6-thinking-120K-high            tasks=400 pass2=0.963 pass1=0.955 pass1_ver=0.955 swaps=2 fixed=0 broken=0
+     gpt-5-4-high                                  tasks=400 pass2=0.956 pass1=0.925 pass1_ver=0.927 swaps=1 fixed=1 broken=0
+   pooled n=2: vote=0.7500 hard=0.7601 tiebreak=0.7601 soft1=0.7601 hedge=0.7564 oracle=0.7848 hard_wins=161 hard_losses=0 tiebreak_wins=161 tiebreak_losses=0 soft1_wins=161 soft1_losses=0 hedge_wins=144 hedge_losses=0 CI hard_ci=(0.0101,0.0087,0.0118) tiebreak_ci=(0.0101,0.0086,0.0117) soft1_ci=(0.0101,0.0086,0.0117) hedge_ci=(0.0064,0.0054,0.0075)
+   pooled n=4: vote=0.8321 hard=0.8543 tiebreak=0.8536 soft1=0.8536 hedge=0.8457 oracle=0.9171 hard_wins=190 hard_losses=0 tiebreak_wins=190 tiebreak_losses=0 soft1_wins=190 soft1_losses=0 hedge_wins=181 hedge_losses=0 CI hard_ci=(0.0222,0.0190,0.0257) tiebreak_ci=(0.0215,0.0184,0.0249) soft1_ci=(0.0215,0.0184,0.0249) hedge_ci=(0.0136,0.0115,0.0159)
+   pooled n=8: vote=0.9311 hard=0.9370 tiebreak=0.9361 soft1=0.9361 hedge=0.9344 oracle=0.9746 hard_wins=151 hard_losses=0 tiebreak_wins=146 tiebreak_losses=0 soft1_wins=146 soft1_losses=0 hedge_wins=118 hedge_losses=0 CI hard_ci=(0.0059,0.0042,0.0080) tiebreak_ci=(0.0050,0.0035,0.0069) soft1_ci=(0.0050,0.0035,0.0069) hedge_ci=(0.0033,0.0023,0.0046)
+   pooled n=16: vote=0.9732 hard=0.9747 tiebreak=0.9740 soft1=0.9740 hedge=0.9740 oracle=0.9908 hard_wins=80 hard_losses=0 tiebreak_wins=55 tiebreak_losses=0 soft1_wins=55 soft1_losses=0 hedge_wins=56 hedge_losses=0 CI hard_ci=(0.0015,0.0006,0.0026) tiebreak_ci=(0.0008,0.0004,0.0015) soft1_ci=(0.0008,0.0004,0.0015) hedge_ci=(0.0008,0.0003,0.0015)
+   pooled n=32: vote=0.9825 hard=0.9836 tiebreak=0.9829 soft1=0.9829 hedge=0.9832 oracle=0.9953 hard_wins=79 hard_losses=0 tiebreak_wins=30 tiebreak_losses=0 soft1_wins=30 soft1_losses=0 hedge_wins=46 hedge_losses=0 CI hard_ci=(0.0011,0.0001,0.0029) tiebreak_ci=(0.0004,0.0001,0.0009) soft1_ci=(0.0004,0.0001,0.0009) hedge_ci=(0.0006,0.0001,0.0015)
+   pooled all: vote=0.9862 hard=0.9888 tiebreak=0.9862 soft1=0.9862 hedge=0.9888 oracle=0.9975 CI {'hard': (0.0025, 0.0, 0.0075), 'tiebreak': (0.0, 0.0, 0.0), 'hedge': (0.0025, 0.0, 0.0075)}

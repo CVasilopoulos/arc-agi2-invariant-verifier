@@ -1,0 +1,9 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Christos Vasilopoulos
+
+This work (code, result files, figures and paper text in this repository) is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/ or see the full legal code at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+You are free to share and adapt the material for any purpose, even commercially, under the condition that you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+NVARC pipeline code inside the notebook is used as published by its authors under their own terms; the ARC-AGI-2 data is Apache-2.0 (arcprize) and the attempt datasets are MIT (Hugging Face arcprize).
