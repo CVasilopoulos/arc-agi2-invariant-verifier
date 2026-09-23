@@ -1,0 +1,325 @@
+== soundness agi2_train: 1000 tasks, 1076 outputs
+   safe6                  gt_pass=0.9916 decoy_pass=0.041 failures=9
+   all16                  gt_pass=0.9006 decoy_pass=0.002 failures=107
+   safe6-palette_exact    gt_pass=0.9954 decoy_pass=0.088 failures=5
+   safe6-palette_subset   gt_pass=0.9926 decoy_pass=0.147 failures=8
+   safe6-hist_equal       gt_pass=0.9916 decoy_pass=0.041 failures=9
+   safe6-nonbg_ge         gt_pass=0.9944 decoy_pass=0.048 failures=6
+   safe6-keep_nonbg       gt_pass=0.9926 decoy_pass=0.044 failures=8
+   safe6-input_in_output  gt_pass=0.9916 decoy_pass=0.042 failures=9
+   safe6+shape            gt_pass=0.9805 decoy_pass=0.013 failures=21
+   safe6+keep_bg          gt_pass=0.9851 decoy_pass=0.037 failures=16
+   safe6+nonbg_equal      gt_pass=0.9861 decoy_pass=0.039 failures=15
+   safe6+nonbg_le         gt_pass=0.9842 decoy_pass=0.026 failures=17
+   safe6+palette_keep     gt_pass=0.9238 decoy_pass=0.014 failures=82
+   safe6+sym_lr           gt_pass=0.9907 decoy_pass=0.040 failures=10
+   shape_only             gt_pass=0.9870 decoy_pass=0.132 failures=14
+   by_k safe6: k2: n=164 fail=2 decoy_pass=0.018 k3: n=606 fail=6 decoy_pass=0.046 k4: n=205 fail=1 decoy_pass=0.035 k5: n=101 fail=0 decoy_pass=0.062
+   by_k all16: k2: n=164 fail=28 decoy_pass=0.000 k3: n=606 fail=57 decoy_pass=0.002 k4: n=205 fail=20 decoy_pass=0.000 k5: n=101 fail=2 decoy_pass=0.002
+== soundness agi2_eval: 120 tasks, 167 outputs
+   safe6                  gt_pass=0.9820 decoy_pass=0.094 failures=3
+   all16                  gt_pass=0.7545 decoy_pass=0.004 failures=41
+   safe6-palette_exact    gt_pass=0.9880 decoy_pass=0.159 failures=2
+   safe6-palette_subset   gt_pass=0.9820 decoy_pass=0.279 failures=3
+   safe6-hist_equal       gt_pass=0.9820 decoy_pass=0.094 failures=3
+   safe6-nonbg_ge         gt_pass=0.9880 decoy_pass=0.101 failures=2
+   safe6-keep_nonbg       gt_pass=0.9820 decoy_pass=0.098 failures=3
+   safe6-input_in_output  gt_pass=0.9820 decoy_pass=0.094 failures=3
+   safe6+shape            gt_pass=0.9401 decoy_pass=0.057 failures=10
+   safe6+keep_bg          gt_pass=0.9820 decoy_pass=0.087 failures=3
+   safe6+nonbg_equal      gt_pass=0.9820 decoy_pass=0.085 failures=3
+   safe6+nonbg_le         gt_pass=0.9701 decoy_pass=0.057 failures=5
+   safe6+palette_keep     gt_pass=0.8263 decoy_pass=0.012 failures=29
+   safe6+sym_lr           gt_pass=0.9701 decoy_pass=0.090 failures=5
+   shape_only             gt_pass=0.9581 decoy_pass=0.259 failures=7
+   by_k safe6: k2: n=48 fail=1 decoy_pass=0.108 k3: n=80 fail=2 decoy_pass=0.085 k4: n=26 fail=0 decoy_pass=0.131 k5: n=13 fail=0 decoy_pass=0.023
+   by_k all16: k2: n=48 fail=17 decoy_pass=0.004 k3: n=80 fail=19 decoy_pass=0.002 k4: n=26 fail=4 decoy_pass=0.008 k5: n=13 fail=1 decoy_pass=0.008
+== soundness agi1_eval: 400 tasks, 419 outputs
+   safe6                  gt_pass=0.9976 decoy_pass=0.045 failures=1
+   all16                  gt_pass=0.9308 decoy_pass=0.001 failures=29
+   safe6-palette_exact    gt_pass=1.0000 decoy_pass=0.117 failures=0
+   safe6-palette_subset   gt_pass=0.9976 decoy_pass=0.128 failures=1
+   safe6-hist_equal       gt_pass=0.9976 decoy_pass=0.046 failures=1
+   safe6-nonbg_ge         gt_pass=0.9976 decoy_pass=0.057 failures=1
+   safe6-keep_nonbg       gt_pass=0.9976 decoy_pass=0.049 failures=1
+   safe6-input_in_output  gt_pass=0.9976 decoy_pass=0.046 failures=1
+   safe6+shape            gt_pass=0.9952 decoy_pass=0.023 failures=2
+   safe6+keep_bg          gt_pass=0.9857 decoy_pass=0.042 failures=6
+   safe6+nonbg_equal      gt_pass=0.9905 decoy_pass=0.044 failures=4
+   safe6+nonbg_le         gt_pass=0.9857 decoy_pass=0.032 failures=6
+   safe6+palette_keep     gt_pass=0.9547 decoy_pass=0.016 failures=19
+   safe6+sym_lr           gt_pass=0.9976 decoy_pass=0.045 failures=1
+   shape_only             gt_pass=0.9976 decoy_pass=0.124 failures=1
+   by_k safe6: k2: n=45 fail=0 decoy_pass=0.024 k3: n=221 fail=1 decoy_pass=0.046 k4: n=92 fail=0 decoy_pass=0.028 k5: n=61 fail=0 decoy_pass=0.085
+   by_k all16: k2: n=45 fail=5 decoy_pass=0.000 k3: n=221 fail=15 decoy_pass=0.002 k4: n=92 fail=7 decoy_pass=0.001 k5: n=61 fail=2 decoy_pass=0.001
+== soundness conceptarc: 160 tasks, 480 outputs
+   safe6                  gt_pass=0.9500 decoy_pass=0.086 failures=24
+   all16                  gt_pass=0.6333 decoy_pass=0.002 failures=176
+   safe6-palette_exact    gt_pass=0.9771 decoy_pass=0.123 failures=11
+   safe6-palette_subset   gt_pass=0.9563 decoy_pass=0.325 failures=21
+   safe6-hist_equal       gt_pass=0.9500 decoy_pass=0.088 failures=24
+   safe6-nonbg_ge         gt_pass=0.9542 decoy_pass=0.093 failures=22
+   safe6-keep_nonbg       gt_pass=0.9563 decoy_pass=0.090 failures=21
+   safe6-input_in_output  gt_pass=0.9500 decoy_pass=0.086 failures=24
+   safe6+shape            gt_pass=0.9146 decoy_pass=0.024 failures=41
+   safe6+keep_bg          gt_pass=0.9458 decoy_pass=0.034 failures=26
+   safe6+nonbg_equal      gt_pass=0.9458 decoy_pass=0.085 failures=26
+   safe6+nonbg_le         gt_pass=0.9396 decoy_pass=0.069 failures=29
+   safe6+palette_keep     gt_pass=0.7083 decoy_pass=0.024 failures=140
+   safe6+sym_lr           gt_pass=0.9271 decoy_pass=0.085 failures=35
+   shape_only             gt_pass=0.9625 decoy_pass=0.208 failures=18
+   by_k safe6: k1: n=3 fail=0 decoy_pass=0.017 k2: n=225 fail=17 decoy_pass=0.061 k3: n=183 fail=5 decoy_pass=0.123 k4: n=66 fail=2 decoy_pass=0.071 k5: n=3 fail=0 decoy_pass=0.083
+   by_k all16: k1: n=3 fail=2 decoy_pass=0.000 k2: n=225 fail=92 decoy_pass=0.001 k3: n=183 fail=71 decoy_pass=0.004 k4: n=66 fail=9 decoy_pass=0.002 k5: n=3 fail=2 decoy_pass=0.000
+   per concept: AboveBelow=25/30 Center=30/30 CleanUp=28/30 CompleteShape=26/30 Copy=29/30 Count=29/30 ExtendToBoundary=30/30 ExtractObjects=28/30 FilledNotFilled=29/30 HorizontalVertical=27/30 InsideOutside=29/30 MoveToBoundary=29/30 Order=28/30 SameDifferent=30/30 TopBottom2D=29/30 TopBottom3D=30/30
+== attempts: valid=21274 wrong=16895 correct=4379
+   family shape            recall=0.091 false_flag=0.0420 active=0.768
+   family palette_exact    recall=0.095 false_flag=0.0005 active=0.695
+   family palette_subset   recall=0.013 false_flag=0.0000 active=1.000
+   family palette_keep     recall=0.218 false_flag=0.1756 active=1.000
+   family hist_equal       recall=0.041 false_flag=0.0021 active=0.059
+   family nonbg_equal      recall=0.097 false_flag=0.0021 active=0.173
+   family nonbg_ge         recall=0.092 false_flag=0.0073 active=0.535
+   family nonbg_le         recall=0.050 false_flag=0.0098 active=0.549
+   family keep_nonbg       recall=0.061 false_flag=0.0000 active=0.173
+   family keep_bg          recall=0.019 false_flag=0.0000 active=0.102
+   family crop_of_input    recall=0.000 false_flag=0.0000 active=0.000
+   family input_in_output  recall=0.005 false_flag=0.0000 active=0.012
+   family sym_lr           recall=0.020 false_flag=0.0082 active=0.041
+   family sym_ud           recall=0.021 false_flag=0.0146 active=0.034
+   family sym_rot180       recall=0.010 false_flag=0.0000 active=0.018
+   family sym_transpose    recall=0.012 false_flag=0.0053 active=0.018
+   set safe6                  recall=0.244 false_flag=0.0078 by_class=near_miss=0.143 wrong_content=0.180 wrong_palette=0.441 wrong_shape=0.287
+   set all16                  recall=0.455 false_flag=0.2427 by_class=near_miss=0.274 wrong_content=0.300 wrong_palette=0.727 wrong_shape=0.651
+   set safe6-palette_exact    recall=0.176 false_flag=0.0073 by_class=near_miss=0.143 wrong_content=0.171 wrong_palette=0.180 wrong_shape=0.201
+   set safe6-palette_subset   recall=0.240 false_flag=0.0078 by_class=near_miss=0.143 wrong_content=0.180 wrong_palette=0.432 wrong_shape=0.276
+   set safe6-hist_equal       recall=0.232 false_flag=0.0078 by_class=near_miss=0.128 wrong_content=0.164 wrong_palette=0.441 wrong_shape=0.278
+   set safe6-nonbg_ge         recall=0.195 false_flag=0.0025 by_class=near_miss=0.100 wrong_content=0.148 wrong_palette=0.387 wrong_shape=0.211
+   set safe6-keep_nonbg       recall=0.191 false_flag=0.0078 by_class=near_miss=0.125 wrong_content=0.094 wrong_palette=0.423 wrong_shape=0.243
+   set safe6-input_in_output  recall=0.239 false_flag=0.0078 by_class=near_miss=0.143 wrong_content=0.170 wrong_palette=0.441 wrong_shape=0.283
+   set safe6+shape            recall=0.295 false_flag=0.0498 by_class=near_miss=0.153 wrong_content=0.202 wrong_palette=0.477 wrong_shape=0.422
+   set safe6+keep_bg          recall=0.257 false_flag=0.0078 by_class=near_miss=0.163 wrong_content=0.196 wrong_palette=0.445 wrong_shape=0.296
+   set safe6+nonbg_equal      recall=0.258 false_flag=0.0078 by_class=near_miss=0.160 wrong_content=0.195 wrong_palette=0.441 wrong_shape=0.307
+   set safe6+nonbg_le         recall=0.278 false_flag=0.0176 by_class=near_miss=0.183 wrong_content=0.216 wrong_palette=0.455 wrong_shape=0.327
+   set safe6+palette_keep     recall=0.367 false_flag=0.1829 by_class=near_miss=0.197 wrong_content=0.235 wrong_palette=0.694 wrong_shape=0.483
+   set safe6+sym_lr           recall=0.260 false_flag=0.0160 by_class=near_miss=0.147 wrong_content=0.191 wrong_palette=0.444 wrong_shape=0.327
+   set shape_only             recall=0.091 false_flag=0.0420 by_class=near_miss=0.010 wrong_content=0.022 wrong_palette=0.041 wrong_shape=0.291
+   by_k safe6: k2: recall=0.307 ff=0.0016 (n=4791/1241) k3: recall=0.238 ff=0.0145 (n=8059/2200) k4: recall=0.129 ff=0.0000 (n=2701/607) k5: recall=0.283 ff=0.0000 (n=1344/331)
+   by_k all16: k2: recall=0.607 ff=0.3521 (n=4791/1241) k3: recall=0.431 ff=0.2386 (n=8059/2200) k4: recall=0.279 ff=0.0972 (n=2701/607) k5: recall=0.408 ff=0.1269 (n=1344/331)
+== pooled n=2: vote=0.3051 oracle=0.3557
+   safe6|lam1                   gain=+0.85 ci=[+0.51,+1.18] wins=130 losses=5 outputs +1.65/-0.14
+   safe6|hard                   gain=+0.86 ci=[+0.52,+1.18] wins=131 losses=5 outputs +1.66/-0.15
+   all16|lam1                   gain=+0.62 ci=[+0.07,+1.15] wins=123 losses=37 outputs +2.05/-1.09
+   all16|hard                   gain=+0.62 ci=[+0.07,+1.14] wins=123 losses=37 outputs +2.05/-1.11
+   safe6-palette_exact|lam1     gain=+0.59 ci=[+0.27,+0.90] wins=108 losses=13 outputs +1.16/-0.14
+   safe6-palette_exact|hard     gain=+0.59 ci=[+0.27,+0.90] wins=109 losses=14 outputs +1.17/-0.15
+   safe6-palette_subset|lam1    gain=+0.83 ci=[+0.50,+1.16] wins=128 losses=5 outputs +1.62/-0.14
+   safe6-palette_subset|hard    gain=+0.84 ci=[+0.50,+1.16] wins=129 losses=5 outputs +1.64/-0.15
+   safe6-hist_equal|lam1        gain=+0.78 ci=[+0.47,+1.08] wins=127 losses=5 outputs +1.55/-0.14
+   safe6-hist_equal|hard        gain=+0.79 ci=[+0.47,+1.09] wins=128 losses=5 outputs +1.56/-0.15
+   safe6-nonbg_ge|lam1          gain=+0.75 ci=[+0.52,+1.01] wins=131 losses=1 outputs +1.37/-0.03
+   safe6-nonbg_ge|hard          gain=+0.75 ci=[+0.52,+1.01] wins=130 losses=1 outputs +1.38/-0.04
+   safe6-keep_nonbg|lam1        gain=+0.61 ci=[+0.29,+0.90] wins=113 losses=6 outputs +1.20/-0.14
+   safe6-keep_nonbg|hard        gain=+0.61 ci=[+0.30,+0.90] wins=115 losses=6 outputs +1.21/-0.15
+   safe6-input_in_output|lam1   gain=+0.85 ci=[+0.51,+1.18] wins=130 losses=5 outputs +1.65/-0.14
+   safe6-input_in_output|hard   gain=+0.86 ci=[+0.52,+1.18] wins=131 losses=5 outputs +1.66/-0.15
+   safe6+shape|lam1             gain=+0.88 ci=[+0.45,+1.28] wins=131 losses=17 outputs +1.89/-0.32
+   safe6+shape|hard             gain=+0.89 ci=[+0.45,+1.28] wins=131 losses=17 outputs +1.90/-0.33
+   safe6+keep_bg|lam1           gain=+1.01 ci=[+0.65,+1.37] wins=138 losses=4 outputs +1.92/-0.14
+   safe6+keep_bg|hard           gain=+1.01 ci=[+0.65,+1.37] wins=139 losses=4 outputs +1.92/-0.15
+   safe6+nonbg_equal|lam1       gain=+0.99 ci=[+0.64,+1.33] wins=136 losses=4 outputs +1.82/-0.14
+   safe6+nonbg_equal|hard       gain=+0.99 ci=[+0.64,+1.34] wins=136 losses=4 outputs +1.83/-0.15
+   safe6+nonbg_le|lam1          gain=+0.88 ci=[+0.41,+1.31] wins=133 losses=15 outputs +1.94/-0.47
+   safe6+nonbg_le|hard          gain=+0.87 ci=[+0.41,+1.31] wins=133 losses=16 outputs +1.94/-0.48
+   safe6+palette_keep|lam1      gain=+0.43 ci=[+0.01,+0.83] wins=101 losses=39 outputs +1.56/-0.80
+   safe6+palette_keep|hard      gain=+0.43 ci=[+0.01,+0.84] wins=102 losses=39 outputs +1.57/-0.81
+   safe6+sym_lr|lam1            gain=+0.88 ci=[+0.54,+1.21] wins=134 losses=4 outputs +1.68/-0.15
+   safe6+sym_lr|hard            gain=+0.89 ci=[+0.54,+1.22] wins=135 losses=4 outputs +1.69/-0.16
+   shape_only|lam1              gain=+0.23 ci=[-0.03,+0.45] wins=52 losses=23 outputs +0.56/-0.17
+   shape_only|hard              gain=+0.23 ci=[-0.03,+0.45] wins=52 losses=23 outputs +0.56/-0.17
+   safe6|lam0.5                 gain=+0.85 ci=[+0.51,+1.18] wins=130 losses=5 outputs +1.65/-0.14
+   safe6|lam2.0                 gain=+0.86 ci=[+0.52,+1.18] wins=131 losses=5 outputs +1.66/-0.15
+   oracle                       gain=+5.06 ci=[+4.42,+5.76] wins=183 losses=0 outputs +8.40/-0.00
+== pooled n=4: vote=0.4107 oracle=0.5985
+   safe6|lam1                   gain=+3.67 ci=[+2.88,+4.53] wins=188 losses=1 outputs +6.17/-0.15
+   safe6|hard                   gain=+3.56 ci=[+2.46,+4.57] wins=179 losses=10 outputs +6.36/-0.47
+   all16|lam1                   gain=+3.26 ci=[+2.22,+4.33] wins=182 losses=8 outputs +6.83/-1.60
+   all16|hard                   gain=+2.31 ci=[+0.72,+3.78] wins=146 losses=42 outputs +7.05/-3.52
+   safe6-palette_exact|lam1     gain=+2.64 ci=[+1.89,+3.45] wins=176 losses=3 outputs +4.36/-0.15
+   safe6-palette_exact|hard     gain=+2.47 ci=[+1.43,+3.45] wins=167 losses=14 outputs +4.47/-0.47
+   safe6-palette_subset|lam1    gain=+3.64 ci=[+2.85,+4.51] wins=188 losses=1 outputs +6.10/-0.15
+   safe6-palette_subset|hard    gain=+3.53 ci=[+2.43,+4.54] wins=179 losses=10 outputs +6.29/-0.47
+   safe6-hist_equal|lam1        gain=+3.43 ci=[+2.69,+4.22] wins=186 losses=1 outputs +5.78/-0.15
+   safe6-hist_equal|hard        gain=+3.34 ci=[+2.31,+4.30] wins=178 losses=10 outputs +5.99/-0.47
+   safe6-nonbg_ge|lam1          gain=+2.78 ci=[+2.13,+3.51] wins=183 losses=0 outputs +4.78/-0.06
+   safe6-nonbg_ge|hard          gain=+2.84 ci=[+2.16,+3.59] wins=183 losses=2 outputs +4.89/-0.10
+   safe6-keep_nonbg|lam1        gain=+2.79 ci=[+2.07,+3.56] wins=183 losses=3 outputs +4.67/-0.15
+   safe6-keep_nonbg|hard        gain=+2.67 ci=[+1.65,+3.60] wins=176 losses=11 outputs +4.85/-0.47
+   safe6-input_in_output|lam1   gain=+3.67 ci=[+2.88,+4.53] wins=188 losses=1 outputs +6.17/-0.15
+   safe6-input_in_output|hard   gain=+3.56 ci=[+2.46,+4.57] wins=179 losses=10 outputs +6.36/-0.47
+   safe6+shape|lam1             gain=+3.85 ci=[+2.97,+4.75] wins=189 losses=3 outputs +6.71/-0.42
+   safe6+shape|hard             gain=+3.59 ci=[+2.37,+4.76] wins=178 losses=12 outputs +6.93/-0.99
+   safe6+keep_bg|lam1           gain=+3.99 ci=[+3.17,+4.88] wins=190 losses=1 outputs +6.71/-0.15
+   safe6+keep_bg|hard           gain=+3.89 ci=[+2.77,+4.95] wins=184 losses=7 outputs +6.93/-0.47
+   safe6+nonbg_equal|lam1       gain=+4.02 ci=[+3.15,+4.94] wins=190 losses=0 outputs +6.62/-0.15
+   safe6+nonbg_equal|hard       gain=+3.93 ci=[+2.78,+5.00] wins=185 losses=5 outputs +6.84/-0.47
+   safe6+nonbg_le|lam1          gain=+4.06 ci=[+3.16,+4.98] wins=189 losses=3 outputs +7.03/-0.45
+   safe6+nonbg_le|hard          gain=+3.74 ci=[+2.38,+4.98] wins=179 losses=12 outputs +7.25/-1.19
+   safe6+palette_keep|lam1      gain=+2.72 ci=[+1.74,+3.67] wins=176 losses=11 outputs +5.96/-1.44
+   safe6+palette_keep|hard      gain=+1.93 ci=[+0.52,+3.25] wins=143 losses=45 outputs +6.15/-2.92
+   safe6+sym_lr|lam1            gain=+3.86 ci=[+3.04,+4.75] wins=189 losses=0 outputs +6.32/-0.17
+   safe6+sym_lr|hard            gain=+3.75 ci=[+2.64,+4.78] wins=182 losses=8 outputs +6.51/-0.47
+   shape_only|lam1              gain=+0.72 ci=[+0.29,+1.11] wins=105 losses=21 outputs +1.45/-0.28
+   shape_only|hard              gain=+0.55 ci=[-0.10,+1.03] wins=89 losses=42 outputs +1.47/-0.56
+   safe6|lam0.5                 gain=+3.67 ci=[+2.88,+4.53] wins=188 losses=1 outputs +6.17/-0.15
+   safe6|lam2.0                 gain=+3.59 ci=[+2.55,+4.57] wins=180 losses=9 outputs +6.36/-0.43
+   oracle                       gain=+18.78 ci=[+17.50,+20.14] wins=200 losses=0 outputs +31.11/-0.00
+== pooled n=8: vote=0.5613 oracle=0.7704
+   safe6|lam1                   gain=+1.91 ci=[+1.40,+2.44] wins=179 losses=1 outputs +3.38/-0.12
+   safe6|hard                   gain=+1.95 ci=[+0.61,+3.01] wins=159 losses=25 outputs +4.07/-0.74
+   all16|lam1                   gain=+1.78 ci=[+1.05,+2.51] wins=167 losses=15 outputs +3.88/-0.94
+   all16|hard                   gain=-1.67 ci=[-4.15,+0.59] wins=46 losses=149 outputs +4.74/-7.57
+   safe6-palette_exact|lam1     gain=+1.39 ci=[+0.95,+1.88] wins=163 losses=3 outputs +2.42/-0.12
+   safe6-palette_exact|hard     gain=+1.21 ci=[-0.03,+2.14] wins=134 losses=42 outputs +2.79/-0.74
+   safe6-palette_subset|lam1    gain=+1.87 ci=[+1.37,+2.41] wins=179 losses=1 outputs +3.33/-0.12
+   safe6-palette_subset|hard    gain=+1.91 ci=[+0.57,+2.97] wins=158 losses=25 outputs +4.01/-0.74
+   safe6-hist_equal|lam1        gain=+1.73 ci=[+1.25,+2.24] wins=175 losses=1 outputs +3.09/-0.12
+   safe6-hist_equal|hard        gain=+1.74 ci=[+0.42,+2.78] wins=152 losses=30 outputs +3.73/-0.74
+   safe6-nonbg_ge|lam1          gain=+1.39 ci=[+0.99,+1.83] wins=168 losses=0 outputs +2.50/-0.07
+   safe6-nonbg_ge|hard          gain=+1.67 ci=[+1.11,+2.33] wins=169 losses=4 outputs +2.96/-0.21
+   safe6-keep_nonbg|lam1        gain=+1.47 ci=[+1.01,+1.97] wins=162 losses=2 outputs +2.62/-0.12
+   safe6-keep_nonbg|hard        gain=+1.51 ci=[+0.21,+2.55] wins=147 losses=32 outputs +3.31/-0.74
+   safe6-input_in_output|lam1   gain=+1.91 ci=[+1.40,+2.44] wins=179 losses=1 outputs +3.38/-0.12
+   safe6-input_in_output|hard   gain=+1.95 ci=[+0.61,+3.01] wins=159 losses=25 outputs +4.07/-0.74
+   safe6+shape|lam1             gain=+1.92 ci=[+1.36,+2.50] wins=178 losses=6 outputs +3.65/-0.32
+   safe6+shape|hard             gain=+1.34 ci=[-0.30,+2.70] wins=130 losses=50 outputs +4.39/-1.93
+   safe6+keep_bg|lam1           gain=+2.11 ci=[+1.55,+2.71] wins=184 losses=1 outputs +3.69/-0.12
+   safe6+keep_bg|hard           gain=+2.17 ci=[+0.80,+3.27] wins=164 losses=20 outputs +4.42/-0.74
+   safe6+nonbg_equal|lam1       gain=+2.23 ci=[+1.62,+2.89] wins=185 losses=1 outputs +3.86/-0.12
+   safe6+nonbg_equal|hard       gain=+2.32 ci=[+0.93,+3.46] wins=168 losses=18 outputs +4.61/-0.74
+   safe6+nonbg_le|lam1          gain=+2.30 ci=[+1.64,+2.97] wins=182 losses=3 outputs +4.19/-0.28
+   safe6+nonbg_le|hard          gain=+1.82 ci=[+0.06,+3.27] wins=137 losses=46 outputs +5.00/-1.97
+   safe6+palette_keep|lam1      gain=+1.49 ci=[+0.90,+2.11] wins=162 losses=17 outputs +3.35/-0.76
+   safe6+palette_keep|hard      gain=-1.84 ci=[-4.25,+0.39] wins=42 losses=155 outputs +4.08/-6.64
+   safe6+sym_lr|lam1            gain=+1.98 ci=[+1.45,+2.54] wins=179 losses=2 outputs +3.42/-0.14
+   safe6+sym_lr|hard            gain=+2.01 ci=[+0.65,+3.09] wins=156 losses=24 outputs +4.12/-0.78
+   shape_only|lam1              gain=+0.20 ci=[-0.02,+0.39] wins=73 losses=27 outputs +0.58/-0.21
+   shape_only|hard              gain=-0.48 ci=[-1.44,+0.26] wins=37 losses=120 outputs +0.60/-1.24
+   safe6|lam0.5                 gain=+1.91 ci=[+1.40,+2.44] wins=179 losses=1 outputs +3.38/-0.12
+   safe6|lam2.0                 gain=+2.00 ci=[+1.12,+2.78] wins=174 losses=12 outputs +3.85/-0.47
+   oracle                       gain=+20.91 ci=[+18.85,+23.11] wins=200 losses=0 outputs +35.32/-0.00
+== pooled n=16: vote=0.7191 oracle=0.8735
+   safe6|lam1                   gain=+0.76 ci=[+0.44,+1.13] wins=129 losses=7 outputs +1.24/-0.06
+   safe6|hard                   gain=+0.97 ci=[-0.50,+2.14] wins=135 losses=43 outputs +2.34/-0.94
+   all16|lam1                   gain=+0.60 ci=[+0.18,+1.04] wins=125 losses=30 outputs +1.36/-0.44
+   all16|hard                   gain=-7.12 ci=[-11.22,-3.52] wins=1 losses=199 outputs +2.63/-14.09
+   safe6-palette_exact|lam1     gain=+0.46 ci=[+0.20,+0.75] wins=100 losses=9 outputs +0.74/-0.06
+   safe6-palette_exact|hard     gain=+0.36 ci=[-1.01,+1.38] wins=106 losses=62 outputs +1.44/-0.94
+   safe6-palette_subset|lam1    gain=+0.76 ci=[+0.44,+1.12] wins=129 losses=7 outputs +1.23/-0.06
+   safe6-palette_subset|hard    gain=+0.96 ci=[-0.50,+2.14] wins=135 losses=43 outputs +2.33/-0.94
+   safe6-hist_equal|lam1        gain=+0.68 ci=[+0.40,+1.01] wins=121 losses=8 outputs +1.10/-0.06
+   safe6-hist_equal|hard        gain=+0.84 ci=[-0.59,+2.00] wins=128 losses=46 outputs +2.14/-0.94
+   safe6-nonbg_ge|lam1          gain=+0.57 ci=[+0.29,+0.89] wins=113 losses=3 outputs +0.93/-0.03
+   safe6-nonbg_ge|hard          gain=+0.92 ci=[+0.30,+1.63] wins=143 losses=19 outputs +1.57/-0.34
+   safe6-keep_nonbg|lam1        gain=+0.66 ci=[+0.35,+1.01] wins=114 losses=7 outputs +1.07/-0.06
+   safe6-keep_nonbg|hard        gain=+0.85 ci=[-0.59,+2.01] wins=127 losses=50 outputs +2.16/-0.94
+   safe6-input_in_output|lam1   gain=+0.76 ci=[+0.44,+1.13] wins=129 losses=7 outputs +1.24/-0.06
+   safe6-input_in_output|hard   gain=+0.97 ci=[-0.50,+2.14] wins=135 losses=43 outputs +2.34/-0.94
+   safe6+shape|lam1             gain=+0.71 ci=[+0.34,+1.12] wins=128 losses=16 outputs +1.31/-0.19
+   safe6+shape|hard             gain=-0.95 ci=[-3.33,+1.17] wins=46 losses=144 outputs +2.43/-3.81
+   safe6+keep_bg|lam1           gain=+0.77 ci=[+0.44,+1.14] wins=131 losses=7 outputs +1.25/-0.06
+   safe6+keep_bg|hard           gain=+1.00 ci=[-0.48,+2.23] wins=137 losses=42 outputs +2.39/-0.94
+   safe6+nonbg_equal|lam1       gain=+0.82 ci=[+0.47,+1.21] wins=133 losses=7 outputs +1.34/-0.06
+   safe6+nonbg_equal|hard       gain=+1.09 ci=[-0.37,+2.30] wins=138 losses=42 outputs +2.54/-0.94
+   safe6+nonbg_le|lam1          gain=+0.83 ci=[+0.46,+1.23] wins=135 losses=11 outputs +1.45/-0.12
+   safe6+nonbg_le|hard          gain=+0.13 ci=[-2.05,+1.95] wins=91 losses=93 outputs +2.73/-2.69
+   safe6+palette_keep|lam1      gain=+0.61 ci=[+0.25,+1.01] wins=121 losses=21 outputs +1.24/-0.30
+   safe6+palette_keep|hard      gain=-6.92 ci=[-11.00,-3.10] wins=0 losses=200 outputs +2.33/-12.82
+   safe6+sym_lr|lam1            gain=+0.75 ci=[+0.43,+1.12] wins=128 losses=7 outputs +1.23/-0.06
+   safe6+sym_lr|hard            gain=+0.91 ci=[-0.58,+2.08] wins=134 losses=45 outputs +2.33/-1.07
+   shape_only|lam1              gain=-0.04 ci=[-0.19,+0.07] wins=19 losses=23 outputs +0.12/-0.14
+   shape_only|hard              gain=-1.95 ci=[-4.07,-0.25] wins=1 losses=196 outputs +0.12/-2.92
+   safe6|lam0.5                 gain=+0.76 ci=[+0.44,+1.13] wins=129 losses=7 outputs +1.24/-0.06
+   safe6|lam2.0                 gain=+0.98 ci=[+0.33,+1.65] wins=143 losses=22 outputs +1.86/-0.41
+   oracle                       gain=+15.44 ci=[+12.71,+18.34] wins=200 losses=0 outputs +26.51/-0.00
+== pooled n=32: vote=0.8034 oracle=0.9349
+   safe6|lam1                   gain=+0.33 ci=[+0.13,+0.58] wins=70 losses=1 outputs +0.47/-0.01
+   safe6|hard                   gain=+0.92 ci=[-0.71,+2.40] wins=126 losses=46 outputs +2.06/-0.91
+   all16|lam1                   gain=+0.30 ci=[+0.08,+0.57] wins=73 losses=11 outputs +0.54/-0.11
+   all16|hard                   gain=-11.24 ci=[-16.74,-6.04] wins=0 losses=200 outputs +2.31/-20.25
+   safe6-palette_exact|lam1     gain=+0.14 ci=[+0.03,+0.28] wins=37 losses=2 outputs +0.20/-0.01
+   safe6-palette_exact|hard     gain=+0.11 ci=[-1.38,+1.21] wins=76 losses=77 outputs +1.01/-0.91
+   safe6-palette_subset|lam1    gain=+0.33 ci=[+0.13,+0.58] wins=70 losses=1 outputs +0.47/-0.01
+   safe6-palette_subset|hard    gain=+0.92 ci=[-0.71,+2.40] wins=126 losses=46 outputs +2.06/-0.91
+   safe6-hist_equal|lam1        gain=+0.30 ci=[+0.12,+0.56] wins=63 losses=1 outputs +0.42/-0.01
+   safe6-hist_equal|hard        gain=+0.85 ci=[-0.78,+2.32] wins=124 losses=48 outputs +1.97/-0.91
+   safe6-nonbg_ge|lam1          gain=+0.25 ci=[+0.08,+0.48] wins=56 losses=1 outputs +0.36/-0.01
+   safe6-nonbg_ge|hard          gain=+1.01 ci=[+0.21,+2.05] wins=147 losses=15 outputs +1.44/-0.24
+   safe6-keep_nonbg|lam1        gain=+0.31 ci=[+0.12,+0.57] wins=69 losses=1 outputs +0.45/-0.01
+   safe6-keep_nonbg|hard        gain=+0.89 ci=[-0.74,+2.39] wins=125 losses=46 outputs +2.02/-0.91
+   safe6-input_in_output|lam1   gain=+0.33 ci=[+0.13,+0.58] wins=70 losses=1 outputs +0.47/-0.01
+   safe6-input_in_output|hard   gain=+0.92 ci=[-0.71,+2.40] wins=126 losses=46 outputs +2.06/-0.91
+   safe6+shape|lam1             gain=+0.31 ci=[+0.11,+0.56] wins=69 losses=5 outputs +0.49/-0.05
+   safe6+shape|hard             gain=-2.14 ci=[-5.45,+0.85] wins=14 losses=176 outputs +2.10/-5.47
+   safe6+keep_bg|lam1           gain=+0.34 ci=[+0.14,+0.60] wins=72 losses=1 outputs +0.48/-0.01
+   safe6+keep_bg|hard           gain=+0.93 ci=[-0.70,+2.43] wins=126 losses=46 outputs +2.07/-0.91
+   safe6+nonbg_equal|lam1       gain=+0.36 ci=[+0.15,+0.63] wins=72 losses=1 outputs +0.51/-0.01
+   safe6+nonbg_equal|hard       gain=+1.02 ci=[-0.62,+2.56] wins=128 losses=42 outputs +2.17/-0.91
+   safe6+nonbg_le|lam1          gain=+0.37 ci=[+0.17,+0.64] wins=76 losses=1 outputs +0.53/-0.01
+   safe6+nonbg_le|hard          gain=-0.17 ci=[-2.80,+2.03] wins=78 losses=110 outputs +2.27/-2.89
+   safe6+palette_keep|lam1      gain=+0.33 ci=[+0.11,+0.60] wins=78 losses=9 outputs +0.56/-0.07
+   safe6+palette_keep|hard      gain=-10.35 ci=[-15.92,-5.23] wins=0 losses=200 outputs +2.26/-18.07
+   safe6+sym_lr|lam1            gain=+0.33 ci=[+0.13,+0.58] wins=70 losses=1 outputs +0.47/-0.01
+   safe6+sym_lr|hard            gain=+0.75 ci=[-0.94,+2.23] wins=119 losses=58 outputs +2.06/-1.31
+   shape_only|lam1              gain=-0.00 ci=[-0.06,+0.04] wins=9 losses=7 outputs +0.04/-0.04
+   shape_only|hard              gain=-3.06 ci=[-6.20,-0.58] wins=0 losses=200 outputs +0.05/-4.58
+   safe6|lam0.5                 gain=+0.33 ci=[+0.13,+0.58] wins=70 losses=1 outputs +0.47/-0.01
+   safe6|lam2.0                 gain=+0.76 ci=[+0.12,+1.48] wins=128 losses=15 outputs +1.25/-0.28
+   oracle                       gain=+13.15 ci=[+9.54,+16.96] wins=200 losses=0 outputs +22.68/-0.00
+== pooled all: vote=0.8486 oracle=0.9792
+   safe6|lam1                   gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6|hard                   gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   all16|lam1                   gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   all16|hard                   gain=-14.36 wins=0 losses=20 outputs +1.10/-23.00
+   safe6-palette_exact|lam1     gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-palette_exact|hard     gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6-palette_subset|lam1    gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-palette_subset|hard    gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6-hist_equal|lam1        gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-hist_equal|hard        gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6-nonbg_ge|lam1          gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-nonbg_ge|hard          gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-keep_nonbg|lam1        gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-keep_nonbg|hard        gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6-input_in_output|lam1   gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6-input_in_output|hard   gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6+shape|lam1             gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6+shape|hard             gain=-4.08 wins=0 losses=20 outputs +0.10/-6.00
+   safe6+keep_bg|lam1           gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6+keep_bg|hard           gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6+nonbg_equal|lam1       gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6+nonbg_equal|hard       gain=-0.75 wins=0 losses=18 outputs +0.10/-1.00
+   safe6+nonbg_le|lam1          gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6+nonbg_le|hard          gain=-2.00 wins=0 losses=20 outputs +0.10/-3.00
+   safe6+palette_keep|lam1      gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6+palette_keep|hard      gain=-13.53 wins=0 losses=20 outputs +1.10/-21.00
+   safe6+sym_lr|lam1            gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6+sym_lr|hard            gain=-1.17 wins=0 losses=20 outputs +0.10/-2.00
+   shape_only|lam1              gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   shape_only|hard              gain=-3.33 wins=0 losses=20 outputs +0.00/-5.00
+   safe6|lam0.5                 gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   safe6|lam2.0                 gain=+0.00 wins=0 losses=0 outputs +0.00/-0.00
+   oracle                       gain=+13.06 wins=20 losses=0 outputs +23.00/-0.00
+== top-2 systems: vote=0.9083 oracle=0.9250 safe6|lam1=+0.00 safe6|hard=+0.00 all16|lam1=+0.00 all16|hard=+0.00 oracle=+1.67
+== top-4 systems: vote=0.9190 oracle=0.9333 safe6|lam1=+0.17 safe6|hard=-0.25 all16|lam1=+0.17 all16|hard=+0.21 oracle=+1.44
+== top-8 systems: vote=0.8974 oracle=0.9750 safe6|lam1=+1.06 safe6|hard=+0.65 all16|lam1=+1.06 all16|hard=+0.37 oracle=+7.76
+== top-16 systems: vote=0.8814 oracle=0.9750 safe6|lam1=+0.25 safe6|hard=-0.71 all16|lam1=+0.14 all16|hard=-2.07 oracle=+9.36
+   theory random_2     vote=0.305 bound=0.55 hard loss=0.09 gain=0.99 | lam1 loss=0.09 gain=0.99 gap_closed=16.8%
+   theory random_4     vote=0.411 bound=0.74 hard loss=0.28 gain=3.81 | lam1 loss=0.09 gain=3.69 gap_closed=19.6%
+   theory random_8     vote=0.561 bound=1.01 hard loss=0.45 gain=2.44 | lam1 loss=0.07 gain=2.02 gap_closed=9.1%
+   theory random_16    vote=0.719 bound=1.29 hard loss=0.56 gain=1.40 | lam1 loss=0.03 gain=0.74 gap_closed=4.9%
+   theory random_32    vote=0.803 bound=1.44 hard loss=0.54 gain=1.23 | lam1 loss=0.01 gain=0.28 gap_closed=2.5%
+   theory all_models   vote=0.849 bound=1.52 hard loss=0.60 gain=0.06 | lam1 loss=0.00 gain=0.00 gap_closed=0.0%
+   theory top_2        vote=0.908 bound=1.63 hard loss=0.00 gain=0.00 | lam1 loss=0.00 gain=0.00 gap_closed=0.0%
+   theory top_4        vote=0.919 bound=1.65 hard loss=0.60 gain=0.24 | lam1 loss=0.00 gain=0.24 gap_closed=11.6%
+   theory top_8        vote=0.897 bound=1.61 hard loss=0.60 gain=0.93 | lam1 loss=0.00 gain=0.93 gap_closed=13.7%
+   theory top_16       vote=0.881 bound=1.58 hard loss=1.20 gain=0.39 | lam1 loss=0.00 gain=0.18 gap_closed=2.7%

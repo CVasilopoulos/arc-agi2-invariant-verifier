@@ -12,7 +12,7 @@ from invariants import TaskInvariants, as_grid
 
 ROOT = os.environ.get("ARC_ROOT", "/work")
 POOL = os.environ.get("POOL_TAR", os.path.join(ROOT, "runs", "commit2", "nvarc_candidate_pools.tar.gz"))
-OUT = os.path.join(ROOT, "results", "nvarc_pool_commit2.json")
+OUT = os.environ.get("POOL_OUT", os.path.join(ROOT, "results", "nvarc_pool_commit2.json"))
 SAFE = ["palette_exact", "palette_subset", "hist_equal", "nonbg_ge", "keep_nonbg", "input_in_output"]
 LAMBDAS = [0.0, 0.5, 1.0, 2.0, float("inf")]
 
