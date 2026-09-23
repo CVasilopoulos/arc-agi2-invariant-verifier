@@ -244,11 +244,13 @@ def theory_section(pooled, eps, n_out):
 
 
 def main():
+    attempt_set = os.environ.get("ATTEMPT_SET", "v2")
+    eval_key, hf_dir = {"v2": ("agi2_eval", "hf_v2_eval"), "v1": ("agi1_eval", "hf_v1_eval")}[attempt_set]
     sets = family_sets()
-    summary = {"seed": SEED, "n_draws": N_DRAWS, "sets": sets}
+    summary = {"seed": SEED, "n_draws": N_DRAWS, "attempt_set": attempt_set, "sets": sets}
     summary["soundness"] = soundness_section(sets)
-    ev = load_dir(DATASETS["agi2_eval"])
-    models, cands = load_attempts(ev, "hf_v2_eval")
+    ev = load_dir(DATASETS[eval_key])
+    models, cands = load_attempts(ev, hf_dir)
     gts = {(tid, ti): as_grid(p["output"]) for tid, t in ev.items() for ti, p in enumerate(t["test"])}
     inv = {}
     for c in cands:
@@ -262,10 +264,11 @@ def main():
     summary["attempts"] = attempt_section(ev, cands, sets)
     summary["pooled"] = pooled_section(ev, cands, models, sets)
     n_out = sum(len(t["test"]) for t in ev.values())
-    eps = 1 - summary["soundness"]["agi2_eval"]["sets"]["safe6"]["gt_pass_rate"]
+    eps = 1 - summary["soundness"][eval_key]["sets"]["safe6"]["gt_pass_rate"]
     summary["theory"] = theory_section(summary["pooled"], eps, n_out)
     summary["n_outputs"] = n_out
-    with open(os.path.join(OUT, "ablations.json"), "w") as fh:
+    name = "ablations.json" if attempt_set == "v2" else f"ablations_{attempt_set}.json"
+    with open(os.path.join(OUT, name), "w") as fh:
         json.dump(summary, fh, indent=1, default=str)
 
 

@@ -20,7 +20,7 @@ def table(head, rows):
 
 
 def main():
-    with open(os.path.join(OUT, "ablations.json")) as fh:
+    with open(os.path.join(OUT, os.environ.get("ABLATIONS_FILE", "ablations.json"))) as fh:
         a = json.load(fh)
     att, snd, pooled, theory = a["attempts"], a["soundness"], a["pooled"], a["theory"]
     print("### A1. Operating points of single families on ARC-AGI-2 attempts\n")

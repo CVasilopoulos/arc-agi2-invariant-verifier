@@ -63,7 +63,7 @@ Intervals: 95% task bootstraps; tables in the appendix.
 
 The one-vote penalty is never negative on average, losing to plain voting in 14 of 1,000 random pools; the hard veto turns negative on the full pool, on the coverage-gap tasks. On ARC-AGI-1 (coverage gaps 0.24%) both rules are non-negative at every size.
 
-**Ablations** (new draws). Removing palette_exact costs 1.0 of the 3.7 points gained at 4 systems; adding keep_bg, nonbg_equal or nonbg_le adds 0.3 to 0.4. Under the one-vote penalty even all sixteen families stay non-negative at every size (+3.3 at 4, +0.6 at 16, 0.0 at 68); as a hard veto they lose 7 points at 16 systems and 14 at 68. Pooling the strongest systems by pass@2 (top 4 vote at 91.9, above 84.9 for all 68), the penalty adds +0.2 (top 4), +1.1 [0.0, 2.8] (top 8), +0.3 (top 16); the hard veto loses on the top 4 and 16.
+**Ablations** (new draws). Removing palette_exact costs 1.0 of the 3.7 points gained at 4 systems; adding keep_bg, nonbg_equal or nonbg_le adds 0.3 to 0.4. Under the one-vote penalty even all sixteen families stay non-negative at every size (+3.3 at 4, +0.6 at 16, 0.0 at 68); as a hard veto they lose 7 points at 16 systems and 14 at 68; ARC-AGI-1 repeats the pattern (appendix). Pooling the strongest systems by pass@2 (top 4 vote at 91.9, above 84.9 for all 68), the penalty adds +0.2 (top 4), +1.1 [0.0, 2.8] (top 8), +0.3 (top 16); the hard veto loses on the top 4 and 16.
 
 **Theory check.** Per output, hard-veto losses rise with pool size from 0.09% (2 systems) to 0.60% (all 68), below ε·pass@2, while gains fall from 3.8% to 0.06%; one-vote losses fall to 0.00%. The penalty closes 17 to 20% of the vote-to-oracle gap at 2 to 4 systems and under 5% beyond 16.
 
