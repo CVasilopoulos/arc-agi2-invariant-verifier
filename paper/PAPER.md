@@ -1,6 +1,6 @@
 # The Demonstrations Are a Verifier: Train-Pair Invariants for ARC-AGI-2 Answer Selection
 
-*A zero-parameter CPU check, measured on 80,000 attempts from 68 to 73 AI systems, ablated family by family, and added to the NVARC Kaggle pipeline*
+*A zero-parameter CPU check on 80,000 attempts from 68 to 73 AI systems, ablated family by family, and added to the NVARC Kaggle pipeline*
 
 ## Abstract
 
