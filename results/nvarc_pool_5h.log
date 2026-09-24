@@ -1,0 +1,325 @@
+pool pools5h: 109 tasks, 146 test outputs, 2188 beams, 1101 distinct candidates (1048 wrong)
+skipped 3 outputs with no ground truth in the public copy: ['4a21e3da_1', 'abc82100_1', 'b6f77b65_2']
+flagged 170: 170 wrong, 0 correct
+output       beams dist c_in c_rank flag  base   l=1  hard  chg1 kgmon_top3 classes
+0934a4d8_0      17   12 False   None    0 False False False False [-3.378, -11.667, -11.86] {'wrong_palette': 12}
+135a2760_0      18    6 True      1    0  True  True  True False [7.495, -3.573, -7.784] {'correct': 1, 'near_miss': 4, 'wrong_content': 1}
+136b0064_0       4    4 False   None    0 False False False False [-31.829, -43.013, -46.303] {'wrong_content': 4}
+13e47133_0       2    2 False   None    0 False False False False [-43.917, -48.306] {'wrong_palette': 2}
+13e47133_1       1    1 False   None    1 False False False False [-47.43] {'wrong_content': 1}
+    flagged rank 1 wrong_content hits=1 kgmon=-47.43 violated=['keep_nonbg']
+142ca369_0      18   10 True      5    0 False False False False [-7.935, -8.19, -9.56] {'wrong_content': 9, 'correct': 1}
+142ca369_1      21   10 False   None    0 False False False False [-3.985, -8.264, -15.639] {'wrong_content': 8, 'near_miss': 2}
+16b78196_0       7    6 False   None    6 False False False False [-5.046, -14.049, -16.584] {'wrong_palette': 6}
+    flagged rank 1 wrong_palette hits=1 kgmon=-5.046 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 2 wrong_palette hits=1 kgmon=-14.049 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 3 wrong_palette hits=1 kgmon=-16.584 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 4 wrong_palette hits=2 kgmon=-18.41 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 5 wrong_palette hits=1 kgmon=-29.195 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 6 wrong_palette hits=1 kgmon=-32.29 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+16de56c4_0       3    2 False   None    0 False False False False [-23.539, -35.913] {'wrong_palette': 2}
+16de56c4_1       7    6 False   None    0 False False False False [-10.959, -11.016, -11.7] {'near_miss': 4, 'wrong_content': 2}
+1818057f_0      16    2 True      1    0  True  True  True False [13.118, -8.067] {'correct': 1, 'near_miss': 1}
+195c6913_0       6    5 False   None    3 False False False False [-15.104, -16.919, -24.559] {'wrong_content': 2, 'wrong_palette': 3}
+    flagged rank 2 wrong_palette hits=1 kgmon=-16.919 violated=['palette_exact']
+    flagged rank 3 wrong_palette hits=1 kgmon=-24.559 violated=['palette_exact']
+    flagged rank 4 wrong_palette hits=1 kgmon=-26.206 violated=['palette_exact']
+195c6913_1       8    8 False   None    1 False False False False [-12.653, -13.758, -19.461] {'wrong_content': 5, 'wrong_palette': 1, 'near_miss': 2}
+    flagged rank 3 wrong_palette hits=1 kgmon=-19.461 violated=['palette_exact']
+1ae2feb7_0      16   16 False   None    0 False False False False [-8.927, -9.685, -10.712] {'near_miss': 8, 'wrong_content': 8}
+1ae2feb7_1      17    4 False   None    0 False False False False [10.373, -2.468, -4.539] {'near_miss': 4}
+1ae2feb7_2      27    9 True      1    0  True  True  True False [8.27, -0.95, -6.973] {'correct': 1, 'wrong_content': 7, 'near_miss': 1}
+20270e3b_0      19   11 False   None    0 False False False False [-5.451, -6.889, -9.977] {'wrong_content': 5, 'wrong_shape': 6}
+20270e3b_1      23   12 False   None    0 False False False False [-0.374, -5.857, -10.359] {'wrong_shape': 12}
+20a9e565_0      20   11 False   None    0 False False False False [-1.572, -5.144, -5.514] {'wrong_shape': 10, 'wrong_content': 1}
+20a9e565_1       8    6 False   None    0 False False False False [-13.25, -15.817, -16.003] {'wrong_shape': 5, 'wrong_content': 1}
+21897d95_1       6    5 False   None    0 False False False False [-21.387, -21.426, -25.665] {'wrong_palette': 5}
+221dfab4_0      20    4 False   None    1 False False False False [-4.328, -7.128, -16.658] {'wrong_content': 4}
+    flagged rank 4 wrong_content hits=3 kgmon=-21.506 violated=['nonbg_ge']
+221dfab4_1       9    9 False   None    2 False False False False [-12.352, -18.155, -18.253] {'wrong_content': 7, 'wrong_palette': 1, 'near_miss': 1}
+    flagged rank 4 wrong_palette hits=1 kgmon=-18.971 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 8 wrong_content hits=1 kgmon=-44.237 violated=['nonbg_ge']
+247ef758_0       8    7 False   None    7 False False False False [-13.897, -15.805, -16.753] {'wrong_palette': 7}
+    flagged rank 1 wrong_palette hits=2 kgmon=-13.897 violated=['palette_exact']
+    flagged rank 2 wrong_palette hits=1 kgmon=-15.805 violated=['palette_exact']
+    flagged rank 3 wrong_palette hits=1 kgmon=-16.753 violated=['palette_exact']
+    flagged rank 4 wrong_palette hits=1 kgmon=-20.142 violated=['palette_exact']
+    flagged rank 5 wrong_palette hits=1 kgmon=-25.566 violated=['palette_exact']
+    flagged rank 6 wrong_palette hits=1 kgmon=-26.279 violated=['palette_exact']
+    flagged rank 7 wrong_palette hits=1 kgmon=-28.386 violated=['palette_exact']
+247ef758_1       6    6 False   None    0 False False False False [-16.346, -18.397, -19.109] {'wrong_content': 6}
+269e22fb_0      16    7 False   None    7 False False False False [-0.03, -0.6, -0.615] {'wrong_content': 7}
+    flagged rank 1 wrong_content hits=3 kgmon=-0.03 violated=['input_in_output']
+    flagged rank 2 wrong_content hits=2 kgmon=-0.6 violated=['input_in_output']
+    flagged rank 3 wrong_content hits=2 kgmon=-0.615 violated=['input_in_output']
+    flagged rank 4 wrong_content hits=3 kgmon=-0.719 violated=['input_in_output']
+    flagged rank 5 wrong_content hits=4 kgmon=-1.007 violated=['input_in_output']
+    flagged rank 6 wrong_content hits=1 kgmon=-1.862 violated=['input_in_output']
+    flagged rank 7 wrong_content hits=1 kgmon=-4.638 violated=['input_in_output']
+269e22fb_1      10    6 False   None    6 False False False False [0.727, -0.324, -1.362] {'wrong_content': 6}
+    flagged rank 1 wrong_content hits=3 kgmon=0.727 violated=['input_in_output']
+    flagged rank 2 wrong_content hits=2 kgmon=-0.324 violated=['input_in_output']
+    flagged rank 3 wrong_content hits=2 kgmon=-1.362 violated=['input_in_output']
+    flagged rank 4 wrong_content hits=1 kgmon=-2.105 violated=['input_in_output']
+    flagged rank 5 wrong_content hits=1 kgmon=-3.198 violated=['input_in_output']
+    flagged rank 6 wrong_content hits=1 kgmon=-4.236 violated=['input_in_output']
+28a6681f_0      21    7 False   None    6 False False False False [4.01, -0.752, -5.013] {'near_miss': 3, 'wrong_content': 4}
+    flagged rank 1 near_miss hits=7 kgmon=4.01 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 3 wrong_content hits=3 kgmon=-5.013 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 4 near_miss hits=2 kgmon=-5.497 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 5 near_miss hits=1 kgmon=-9.517 violated=['hist_equal']
+    flagged rank 6 wrong_content hits=1 kgmon=-12.866 violated=['hist_equal']
+    flagged rank 7 wrong_content hits=1 kgmon=-15.198 violated=['hist_equal']
+291dc1e1_0       2    2 False   None    0 False False False False [-35.022, -37.084] {'wrong_shape': 2}
+2b83f449_0      17   13 True      2   11  True  True  True False [-13.981, -16.491, -17.754] {'near_miss': 12, 'correct': 1}
+    flagged rank 1 near_miss hits=2 kgmon=-13.981 violated=['nonbg_ge']
+    flagged rank 3 near_miss hits=1 kgmon=-17.754 violated=['nonbg_ge']
+    flagged rank 5 near_miss hits=1 kgmon=-22.029 violated=['nonbg_ge']
+    flagged rank 6 near_miss hits=1 kgmon=-22.181 violated=['nonbg_ge']
+    flagged rank 7 near_miss hits=2 kgmon=-22.273 violated=['nonbg_ge']
+    flagged rank 8 near_miss hits=1 kgmon=-22.463 violated=['nonbg_ge']
+    flagged rank 9 near_miss hits=1 kgmon=-23.75 violated=['nonbg_ge']
+    flagged rank 10 near_miss hits=1 kgmon=-24.898 violated=['nonbg_ge']
+    flagged rank 11 near_miss hits=1 kgmon=-25.482 violated=['nonbg_ge']
+    flagged rank 12 near_miss hits=2 kgmon=-27.62 violated=['nonbg_ge']
+    flagged rank 13 near_miss hits=1 kgmon=-32.737 violated=['nonbg_ge']
+2ba387bc_0      18    7 True      2    2  True  True  True False [1.408, -0.782, -10.588] {'wrong_content': 1, 'correct': 1, 'wrong_shape': 5}
+    flagged rank 3 wrong_shape hits=2 kgmon=-10.588 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 4 wrong_shape hits=1 kgmon=-11.705 violated=['palette_exact', 'nonbg_ge']
+2c181942_0      12   10 False   None    0 False False False False [-8.175, -9.38, -12.066] {'near_miss': 10}
+2d0172a1_0      22    8 True      1    0  True  True  True False [1.138, -3.055, -10.152] {'correct': 1, 'wrong_shape': 6, 'wrong_content': 1}
+2d0172a1_1      24   12 True      1    0  True  True  True False [3.527, -4.86, -5.208] {'correct': 1, 'wrong_shape': 10, 'near_miss': 1}
+31f7f899_0      20    7 True      3    2 False False  True False [7.366, -2.158, -5.351] {'near_miss': 4, 'correct': 1, 'wrong_content': 2}
+    flagged rank 2 near_miss hits=3 kgmon=-2.158 violated=['nonbg_ge']
+    flagged rank 5 near_miss hits=1 kgmon=-6.675 violated=['nonbg_ge']
+332f06d7_0      23    6 False   None    3 False False False False [14.216, -2.231, -4.029] {'wrong_palette': 3, 'wrong_content': 3}
+    flagged rank 1 wrong_palette hits=15 kgmon=14.216 violated=['nonbg_ge']
+    flagged rank 2 wrong_palette hits=3 kgmon=-2.231 violated=['nonbg_ge']
+    flagged rank 5 wrong_palette hits=2 kgmon=-8.052 violated=['nonbg_ge']
+35ab12c3_0      15   11 True      7    0 False False False False [-7.435, -9.738, -14.326] {'near_miss': 7, 'correct': 1, 'wrong_content': 3}
+36a08778_0      20    6 True      1    0  True  True  True False [8.41, -12.095, -12.482] {'correct': 1, 'near_miss': 1, 'wrong_content': 4}
+36a08778_1      17    9 False   None    1 False False False False [-9.992, -11.14, -11.568] {'wrong_content': 3, 'near_miss': 6}
+    flagged rank 3 near_miss hits=4 kgmon=-11.568 violated=['keep_nonbg']
+38007db0_0      16    1 True      1    0  True  True  True False [15.96] {'correct': 1}
+38007db0_1      16    1 True      1    0  True  True  True False [15.999] {'correct': 1}
+3a25b0d8_0      18   13 True      1    9  True  True  True False [-4.573, -6.975, -11.875] {'correct': 1, 'wrong_palette': 7, 'near_miss': 3, 'wrong_shape': 2}
+    flagged rank 2 wrong_palette hits=2 kgmon=-6.975 violated=['palette_exact']
+    flagged rank 3 wrong_palette hits=2 kgmon=-11.875 violated=['palette_exact']
+    flagged rank 4 wrong_palette hits=2 kgmon=-12.162 violated=['palette_exact']
+    flagged rank 5 wrong_palette hits=1 kgmon=-12.663 violated=['palette_exact']
+    flagged rank 6 wrong_palette hits=1 kgmon=-14.232 violated=['palette_exact']
+    flagged rank 7 wrong_palette hits=1 kgmon=-16.142 violated=['palette_exact']
+    flagged rank 9 wrong_shape hits=1 kgmon=-24.275 violated=['palette_exact']
+    flagged rank 11 wrong_palette hits=1 kgmon=-26.707 violated=['palette_exact']
+    flagged rank 13 wrong_shape hits=1 kgmon=-31.57 violated=['palette_exact']
+3a25b0d8_1      17    3 True      1    1  True  True  True False [9.633, -10.908, -14.404] {'correct': 1, 'near_miss': 1, 'wrong_palette': 1}
+    flagged rank 3 wrong_palette hits=4 kgmon=-14.404 violated=['palette_exact']
+3dc255db_0      12   10 False   None    0 False False False False [-2.548, -6.498, -8.264] {'near_miss': 10}
+3e6067c3_0       8    6 False   None    0 False False False False [-10.44, -12.031, -14.906] {'near_miss': 6}
+3e6067c3_1       8    8 False   None    0 False False False False [-12.526, -13.323, -15.499] {'near_miss': 6, 'wrong_content': 2}
+409aa875_0      19    8 False   None    0 False False False False [-4.613, -4.647, -4.932] {'wrong_palette': 8}
+446ef5d2_1       3    3 False   None    0 False False False False [-23.625, -25.552, -25.882] {'wrong_content': 3}
+45a5af55_0      17    2 True      1    1  True  True  True False [15.867, -8.417] {'correct': 1, 'wrong_shape': 1}
+    flagged rank 2 wrong_shape hits=1 kgmon=-8.417 violated=['palette_exact']
+4a21e3da_0       9    7 False   None    0 False False False False [-12.421, -13.849, -18.08] {'wrong_shape': 7}
+4c3d4a41_0      20    6 True      1    4  True  True  True False [-1.151, -3.339, -4.22] {'correct': 1, 'wrong_palette': 4, 'near_miss': 1}
+    flagged rank 2 wrong_palette hits=2 kgmon=-3.339 violated=['palette_exact']
+    flagged rank 3 wrong_palette hits=4 kgmon=-4.22 violated=['palette_exact']
+    flagged rank 5 wrong_palette hits=2 kgmon=-10.165 violated=['palette_exact']
+    flagged rank 6 wrong_palette hits=1 kgmon=-13.13 violated=['palette_exact']
+4c3d4a41_1      19    3 True      2    0  True  True  True False [8.723, -2.035, -7.423] {'near_miss': 2, 'correct': 1}
+4c416de3_0      16    2 False   None    0 False False False False [13.074, -11.35] {'near_miss': 2}
+4c7dc4dd_0      18   13 True      1    0  True  True  True False [-1.021, -4.109, -4.853] {'correct': 1, 'wrong_content': 4, 'wrong_palette': 8}
+4c7dc4dd_1      17   12 True      7    0 False False False False [-1.191, -7.404, -7.493] {'wrong_content': 2, 'wrong_palette': 8, 'wrong_shape': 1, 'correct': 1}
+4e34c42c_0       1    1 False   None    0 False False False False [-7.333] {'wrong_shape': 1}
+53fb4810_0      20    4 True      1    0  True  True  True False [9.549, -1.643, -1.906] {'correct': 1, 'near_miss': 3}
+5545f144_0      12    9 False   None    0 False False False False [-5.139, -7.566, -8.739] {'wrong_shape': 3, 'wrong_content': 4, 'near_miss': 2}
+581f7754_0       3    3 False   None    3 False False False False [-28.825, -37.19, -40.565] {'wrong_content': 3}
+    flagged rank 1 wrong_content hits=1 kgmon=-28.825 violated=['hist_equal']
+    flagged rank 2 wrong_content hits=1 kgmon=-37.19 violated=['hist_equal']
+    flagged rank 3 wrong_content hits=1 kgmon=-40.565 violated=['hist_equal', 'nonbg_ge']
+581f7754_1       3    2 False   None    0 False False False False [-13.328, -17.581] {'wrong_content': 2}
+58490d8a_0      18    9 False   None    0 False False False False [5.545, -5.834, -6.46] {'near_miss': 5, 'wrong_content': 3, 'wrong_shape': 1}
+58f5dbd5_0      18    3 True      1    0  True  True  True False [15.504, -10.022, -11.922] {'correct': 1, 'near_miss': 2}
+5961cc34_0      16    1 False   None    0 False False False False [15.973] {'near_miss': 1}
+62593bfd_0      19    7 False   None    3 False False False False [7.782, -3.863, -4.288] {'wrong_content': 5, 'near_miss': 2}
+    flagged rank 5 wrong_content hits=1 kgmon=-11.838 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 6 wrong_content hits=1 kgmon=-16.859 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 7 near_miss hits=2 kgmon=-17.676 violated=['hist_equal', 'nonbg_ge']
+62593bfd_1      18   10 False   None    2 False False False False [-0.971, -3.458, -3.555] {'near_miss': 4, 'wrong_content': 4, 'wrong_palette': 2}
+    flagged rank 9 wrong_palette hits=2 kgmon=-9.984 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 10 wrong_palette hits=1 kgmon=-11.947 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+64efde09_0       7    6 False   None    3 False False False False [-13.363, -13.914, -19.216] {'wrong_content': 5, 'wrong_palette': 1}
+    flagged rank 1 wrong_content hits=1 kgmon=-13.363 violated=['keep_nonbg']
+    flagged rank 2 wrong_palette hits=1 kgmon=-13.914 violated=['palette_exact', 'keep_nonbg']
+    flagged rank 3 wrong_content hits=2 kgmon=-19.216 violated=['keep_nonbg']
+65b59efc_0      18   12 True      1    0  True  True  True False [-4.038, -10.239, -13.44] {'correct': 1, 'wrong_palette': 9, 'near_miss': 1, 'wrong_content': 1}
+65b59efc_1      12   12 False   None    0 False False False False [-23.01, -24.269, -28.657] {'wrong_content': 5, 'wrong_palette': 6, 'near_miss': 1}
+67e490f4_0      13    9 False   None    0 False False False False [-5.355, -7.698, -7.894] {'wrong_palette': 9}
+6e453dd6_0      22    8 True      3    0 False False False False [-0.918, -0.937, -1.37] {'near_miss': 6, 'correct': 1, 'wrong_content': 1}
+71e489b6_0      19    7 True      1    0  True  True  True False [7.63, -6.157, -7.479] {'correct': 1, 'near_miss': 6}
+71e489b6_1      20    7 True      1    0  True  True  True False [7.03, -8.706, -10.674] {'correct': 1, 'near_miss': 6}
+7491f3cf_0      26   12 False   None    0 False False False False [2.344, 0.179, -1.694] {'wrong_content': 10, 'near_miss': 2}
+7666fa5d_0      17    2 True      1    0  True  True  True False [15.797, -11.828] {'correct': 1, 'near_miss': 1}
+78332cb0_0      21   10 True      3    0 False False False False [-6.142, -7.128, -8.134] {'wrong_shape': 2, 'wrong_content': 7, 'correct': 1}
+78332cb0_1      25   12 True      1    0  True  True  True False [-1.197, -4.746, -5.929] {'correct': 1, 'wrong_content': 3, 'wrong_shape': 8}
+7b0280bc_0      22   15 False   None    0 False False False False [-6.086, -8.762, -11.709] {'wrong_content': 12, 'near_miss': 3}
+7b3084d4_0      18   15 False   None    1 False False False False [-15.499, -16.148, -19.655] {'wrong_content': 13, 'wrong_palette': 1, 'wrong_shape': 1}
+    flagged rank 10 wrong_palette hits=1 kgmon=-24.82 violated=['palette_exact']
+7b5033c1_0      16    9 False   None    6 False False False False [-3.832, -4.291, -4.706] {'wrong_shape': 9}
+    flagged rank 1 wrong_shape hits=4 kgmon=-3.832 violated=['nonbg_ge']
+    flagged rank 2 wrong_shape hits=1 kgmon=-4.291 violated=['nonbg_ge']
+    flagged rank 3 wrong_shape hits=2 kgmon=-4.706 violated=['nonbg_ge']
+    flagged rank 7 wrong_shape hits=1 kgmon=-13.038 violated=['nonbg_ge']
+    flagged rank 8 wrong_shape hits=1 kgmon=-16.815 violated=['nonbg_ge']
+    flagged rank 9 wrong_shape hits=1 kgmon=-22.508 violated=['nonbg_ge']
+7b80bb43_0      19    5 True      2    0  True  True  True False [8.609, 1.957, -5.702] {'near_miss': 4, 'correct': 1}
+7c66cb00_0      20    9 True      1    0  True  True  True False [8.364, -9.02, -10.127] {'correct': 1, 'near_miss': 6, 'wrong_content': 2}
+7ed72f31_0      19   11 True      1    0  True  True  True False [-2.689, -2.99, -4.28] {'correct': 1, 'near_miss': 8, 'wrong_content': 2}
+7ed72f31_1      11    8 False   None    0 False False False False [-8.536, -13.761, -14.808] {'near_miss': 8}
+800d221b_0      24   19 False   None    0 False False False False [-7.231, -8.731, -8.984] {'near_miss': 15, 'wrong_content': 4}
+80a900e0_0       4    4 True      1    0  True  True  True False [-6.052, -7.782, -13.986] {'correct': 1, 'near_miss': 3}
+8698868d_0      21   14 False   None    0 False False False False [-2.587, -3.201, -5.485] {'wrong_content': 12, 'wrong_palette': 2}
+88bcf3b4_0      12   10 False   None    8 False False False False [-15.691, -18.072, -18.671] {'wrong_palette': 8, 'near_miss': 1, 'wrong_content': 1}
+    flagged rank 1 wrong_palette hits=1 kgmon=-15.691 violated=['palette_exact']
+    flagged rank 2 wrong_palette hits=1 kgmon=-18.072 violated=['palette_exact']
+    flagged rank 3 wrong_palette hits=1 kgmon=-18.671 violated=['palette_exact']
+    flagged rank 4 wrong_palette hits=1 kgmon=-21.379 violated=['palette_exact']
+    flagged rank 5 wrong_palette hits=1 kgmon=-22.473 violated=['palette_exact']
+    flagged rank 6 wrong_palette hits=1 kgmon=-24.846 violated=['palette_exact']
+    flagged rank 7 wrong_palette hits=2 kgmon=-25.879 violated=['palette_exact']
+    flagged rank 9 wrong_palette hits=1 kgmon=-32.165 violated=['palette_exact']
+88bcf3b4_1       3    2 False   None    1 False False False False [-18.844, -26.046] {'wrong_palette': 1, 'near_miss': 1}
+    flagged rank 1 wrong_palette hits=2 kgmon=-18.844 violated=['palette_exact']
+88e364bc_0      23   13 False   None   12 False False False False [3.749, -5.974, -6.535] {'near_miss': 12, 'wrong_palette': 1}
+    flagged rank 1 near_miss hits=8 kgmon=3.749 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 2 wrong_palette hits=1 kgmon=-5.974 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 3 near_miss hits=1 kgmon=-6.535 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 4 near_miss hits=1 kgmon=-6.748 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 5 near_miss hits=2 kgmon=-7.927 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 6 near_miss hits=2 kgmon=-8.763 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 7 near_miss hits=1 kgmon=-9.599 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 8 near_miss hits=1 kgmon=-10.757 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 10 near_miss hits=1 kgmon=-11.353 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 11 near_miss hits=1 kgmon=-12.215 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 12 near_miss hits=1 kgmon=-13.589 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 13 near_miss hits=2 kgmon=-14.191 violated=['hist_equal', 'nonbg_ge']
+88e364bc_1      22   12 False   None    9 False False False False [-5.705, -6.131, -6.344] {'near_miss': 11, 'wrong_palette': 1}
+    flagged rank 3 wrong_palette hits=2 kgmon=-6.344 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 4 near_miss hits=3 kgmon=-6.42 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 6 near_miss hits=2 kgmon=-9.832 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 7 near_miss hits=2 kgmon=-13.292 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 8 near_miss hits=1 kgmon=-13.647 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 9 near_miss hits=1 kgmon=-13.989 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 10 near_miss hits=1 kgmon=-14.28 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 11 near_miss hits=1 kgmon=-15.411 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 12 near_miss hits=1 kgmon=-15.545 violated=['hist_equal', 'nonbg_ge']
+89565ca0_0      25   13 False   None    1 False False False False [-0.968, -1.826, -3.733] {'wrong_shape': 13}
+    flagged rank 13 wrong_shape hits=1 kgmon=-12.856 violated=['palette_exact']
+898e7135_0      12   12 False   None    0 False False False False [-6.309, -6.318, -6.805] {'wrong_shape': 12}
+8b7bacbf_0      23   14 False   None    0 False False False False [-0.741, -2.088, -6.539] {'near_miss': 12, 'wrong_content': 2}
+8b7bacbf_1       8    5 False   None    0 False False False False [-6.493, -6.651, -8.773] {'wrong_content': 1, 'near_miss': 4}
+8b9c3697_0      23   14 True      1    0  True  True  True False [3.043, -8.341, -8.751] {'correct': 1, 'near_miss': 12, 'wrong_content': 1}
+8e5c0c38_0       2    1 False   None    0 False False False False [-9.68] {'near_miss': 1}
+8e5c0c38_1      19   14 True      1    0  True  True  True False [-5.505, -7.349, -10.766] {'correct': 1, 'near_miss': 13}
+8f215267_0      19   11 True      6    0 False False False False [-3.904, -4.098, -4.346] {'near_miss': 10, 'correct': 1}
+8f3a5a89_0      21    4 True      3    0 False False False False [11.598, 0.858, -3.42] {'wrong_content': 2, 'near_miss': 1, 'correct': 1}
+9385bd28_0       9    8 False   None    0 False False False False [-8.255, -9.437, -10.184] {'wrong_content': 8}
+9385bd28_1       9    8 False   None    0 False False False False [-14.154, -14.909, -16.478] {'near_miss': 1, 'wrong_content': 7}
+97d7923e_0      20   14 False   None    0 False False False False [-0.856, -3.738, -4.368] {'near_miss': 7, 'wrong_content': 7}
+981571dc_0      16    1 True      1    0  True  True  True False [15.999] {'correct': 1}
+9aaea919_0      22    3 True      1    2  True  True  True False [15.288, 1.736, -3.365] {'correct': 1, 'near_miss': 2}
+    flagged rank 2 near_miss hits=5 kgmon=1.736 violated=['nonbg_ge']
+    flagged rank 3 near_miss hits=1 kgmon=-3.365 violated=['nonbg_ge']
+9bbf930d_0      14   12 False   None   10 False False False  True [-10.976, -12.31, -12.415] {'near_miss': 12}
+    flagged rank 1 near_miss hits=1 kgmon=-10.976 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 2 near_miss hits=1 kgmon=-12.31 violated=['hist_equal']
+    flagged rank 4 near_miss hits=2 kgmon=-13.297 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 5 near_miss hits=1 kgmon=-14.529 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 7 near_miss hits=1 kgmon=-16.211 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 8 near_miss hits=1 kgmon=-18.141 violated=['hist_equal']
+    flagged rank 9 near_miss hits=1 kgmon=-18.812 violated=['hist_equal']
+    flagged rank 10 near_miss hits=1 kgmon=-19.748 violated=['hist_equal']
+    flagged rank 11 near_miss hits=1 kgmon=-20.668 violated=['hist_equal']
+    flagged rank 12 near_miss hits=1 kgmon=-20.697 violated=['hist_equal']
+a251c730_0      13    6 True      1    0  True  True  True False [3.165, -2.685, -3.865] {'correct': 1, 'wrong_palette': 3, 'wrong_shape': 2}
+a25697e4_0      13    6 False   None    6 False False False False [2.63, -0.757, -9.486] {'near_miss': 6}
+    flagged rank 1 near_miss hits=6 kgmon=2.63 violated=['nonbg_ge']
+    flagged rank 2 near_miss hits=3 kgmon=-0.757 violated=['nonbg_ge']
+    flagged rank 3 near_miss hits=1 kgmon=-9.486 violated=['nonbg_ge']
+    flagged rank 4 near_miss hits=1 kgmon=-13.636 violated=['nonbg_ge']
+    flagged rank 5 near_miss hits=1 kgmon=-13.97 violated=['nonbg_ge']
+    flagged rank 6 near_miss hits=1 kgmon=-17.667 violated=['nonbg_ge']
+a25697e4_1       5    4 False   None    4 False False False False [-4.908, -6.121, -15.721] {'wrong_palette': 4}
+    flagged rank 1 wrong_palette hits=2 kgmon=-4.908 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 2 wrong_palette hits=1 kgmon=-6.121 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 3 wrong_palette hits=1 kgmon=-15.721 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 4 wrong_palette hits=1 kgmon=-22.532 violated=['palette_exact', 'nonbg_ge']
+a32d8b75_1       3    3 False   None    0 False False False False [-8.869, -18.311, -22.674] {'wrong_content': 2, 'wrong_palette': 1}
+a395ee82_0      19   13 False   None    2 False False False False [-5.964, -10.081, -12.318] {'wrong_palette': 2, 'wrong_content': 7, 'near_miss': 4}
+    flagged rank 1 wrong_palette hits=1 kgmon=-5.964 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 7 wrong_palette hits=1 kgmon=-17.562 violated=['palette_exact']
+a47bf94d_0       9    7 False   None    0 False False False False [-2.625, -3.246, -5.843] {'near_miss': 7}
+a6f40cea_0      15    9 True      1    0  True  True  True False [-3.108, -3.798, -6.916] {'correct': 1, 'wrong_content': 5, 'wrong_palette': 3}
+aa4ec2a5_0      16    2 True      1    0  True  True  True False [5.669, 2.964] {'correct': 1, 'wrong_content': 1}
+abc82100_0      19   11 False   None    1 False False False False [1.214, -5.328, -5.452] {'wrong_palette': 11}
+    flagged rank 5 wrong_palette hits=1 kgmon=-8.369 violated=['palette_subset']
+b0039139_0      18    3 False   None    0 False False False False [5.015, 3.038, -0.01] {'wrong_shape': 3}
+b0039139_1      21    4 True      3    0 False False False False [8.193, 7.359, -7.241] {'wrong_shape': 3, 'correct': 1}
+b10624e5_0       2    2 False   None    2 False False False False [-16.637, -40.669] {'wrong_content': 2}
+    flagged rank 1 wrong_content hits=1 kgmon=-16.637 violated=['keep_nonbg']
+    flagged rank 2 wrong_content hits=1 kgmon=-40.669 violated=['keep_nonbg']
+b5ca7ac4_0      16   12 True      1    8  True  True  True False [-4.355, -4.714, -5.268] {'correct': 1, 'wrong_content': 5, 'wrong_palette': 6}
+    flagged rank 5 wrong_content hits=1 kgmon=-12.784 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 6 wrong_palette hits=1 kgmon=-14.16 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 7 wrong_palette hits=1 kgmon=-15.581 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 8 wrong_palette hits=1 kgmon=-15.686 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 9 wrong_palette hits=1 kgmon=-15.954 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 10 wrong_palette hits=1 kgmon=-16.935 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+    flagged rank 11 wrong_content hits=2 kgmon=-18.088 violated=['hist_equal', 'nonbg_ge']
+    flagged rank 12 wrong_palette hits=1 kgmon=-26.746 violated=['palette_exact', 'hist_equal', 'nonbg_ge']
+b6f77b65_0      20   11 False   None    1 False False False False [1.789, -3.594, -6.768] {'wrong_content': 10, 'wrong_palette': 1}
+    flagged rank 6 wrong_palette hits=1 kgmon=-12.431 violated=['palette_exact']
+b6f77b65_1      19    6 False   None    0 False False False False [11.708, -4.943, -5.609] {'wrong_content': 6}
+b99e7126_0      21    8 False   None    0 False False False False [5.794, 0.988, -5.358] {'near_miss': 8}
+b9e38dc0_0      13    7 False   None    0 False False False False [-4.525, -7.144, -8.493] {'wrong_content': 7}
+bf45cf4b_0      20    2 True      1    0  True  True  True False [15.819, -7.774] {'correct': 1, 'wrong_shape': 1}
+c4d067a0_0      17   11 False   None    1 False False False  True [-0.302, -12.717, -13.013] {'wrong_content': 11}
+    flagged rank 2 wrong_content hits=2 kgmon=-12.717 violated=['keep_nonbg']
+c7f57c3e_0      14    8 False   None    5 False False False False [-3.715, -7.807, -10.718] {'wrong_palette': 2, 'near_miss': 4, 'wrong_content': 2}
+    flagged rank 1 wrong_palette hits=2 kgmon=-3.715 violated=['palette_exact']
+    flagged rank 2 near_miss hits=1 kgmon=-7.807 violated=['nonbg_ge']
+    flagged rank 6 wrong_palette hits=2 kgmon=-11.831 violated=['palette_exact', 'nonbg_ge']
+    flagged rank 7 near_miss hits=1 kgmon=-12.863 violated=['nonbg_ge']
+    flagged rank 8 wrong_content hits=1 kgmon=-22.395 violated=['nonbg_ge']
+cb2d8a2c_0      16   11 False   None    0 False False False False [-8.608, -14.736, -15.342] {'wrong_content': 11}
+cb2d8a2c_1      13    9 False   None    0 False False False False [-12.993, -13.138, -16.899] {'wrong_content': 9}
+cbebaa4b_1       1    1 False   None    0 False False False False [-75.596] {'wrong_content': 1}
+d35bdbdc_0      14   14 False   None    0 False False False False [-6.195, -6.216, -7.035] {'wrong_palette': 14}
+d35bdbdc_1      25   12 True      3    0 False False False False [5.746, -1.337, -4.258] {'wrong_palette': 10, 'correct': 1, 'wrong_content': 1}
+d35bdbdc_2      21    7 True      1    1  True  True  True False [13.243, -3.263, -7.622] {'correct': 1, 'wrong_palette': 6}
+    flagged rank 7 wrong_palette hits=1 kgmon=-23.071 violated=['palette_subset']
+d59b0160_0      17    8 False   None    0 False False False False [-3.902, -4.885, -8.138] {'wrong_content': 7, 'wrong_palette': 1}
+d8e07eb2_0      12    4 True      2    1  True  True  True False [6.056, -0.462, -2.247] {'wrong_content': 2, 'correct': 1, 'near_miss': 1}
+    flagged rank 3 near_miss hits=1 kgmon=-2.247 violated=['keep_nonbg']
+d8e07eb2_1       7    3 True      2    0  True  True  True False [1.063, 0.499, -9.939] {'wrong_content': 1, 'correct': 1, 'near_miss': 1}
+da515329_0       7    7 False   None    0 False False False False [-29.719, -34.687, -34.869] {'wrong_content': 7}
+db0c5428_0      16    1 True      1    0  True  True  True False [15.975] {'correct': 1}
+db695cfb_0      11   10 False   None    0 False False False False [-6.883, -8.4, -12.037] {'wrong_content': 10}
+dbff022c_0      22    9 False   None    0 False False False False [2.418, 0.235, -1.831] {'wrong_content': 9}
+dd6b8c4b_0      20    6 False   None    0 False False False False [5.235, 0.486, -5.028] {'wrong_palette': 6}
+dd6b8c4b_1      18   12 False   None    0 False False False False [0.677, -2.279, -4.108] {'near_miss': 2, 'wrong_palette': 10}
+de809cff_0      22   12 True      1    0  True  True  True False [7.849, -5.448, -8.016] {'correct': 1, 'near_miss': 11}
+dfadab01_0      22    6 True      3    0 False False False False [0.736, -2.483, -7.34] {'wrong_content': 4, 'near_miss': 1, 'correct': 1}
+e12f9a14_1       1    1 False   None    0 False False False False [-33.82] {'wrong_content': 1}
+e3721c99_0       4    3 False   None    0 False False False False [-8.1, -10.44, -16.203] {'wrong_content': 3}
+e376de54_0      23   13 False   None    3 False False False False [-4.731, -5.722, -7.187] {'wrong_content': 7, 'near_miss': 5, 'wrong_palette': 1}
+    flagged rank 2 wrong_content hits=2 kgmon=-5.722 violated=['nonbg_ge']
+    flagged rank 5 near_miss hits=3 kgmon=-9.049 violated=['nonbg_ge']
+    flagged rank 9 wrong_palette hits=2 kgmon=-14.248 violated=['palette_exact']
+e8686506_0      22    8 True      2    0  True  True  True False [-1.145, -1.155, -2.315] {'wrong_palette': 5, 'correct': 1, 'wrong_content': 2}
+lambda= 0.0: task score 31.667/109, outputs correct 42/146, top-2 changed 0
+lambda= 0.5: task score 31.667/109, outputs correct 42/146, top-2 changed 2
+lambda= 1.0: task score 31.667/109, outputs correct 42/146, top-2 changed 2
+lambda= 2.0: task score 31.667/109, outputs correct 42/146, top-2 changed 5
+lambda= inf: task score 32.667/109, outputs correct 43/146, top-2 changed 17

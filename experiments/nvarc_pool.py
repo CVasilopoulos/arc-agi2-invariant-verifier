@@ -62,6 +62,9 @@ def main():
     tasks = load_dir(DATASETS["agi2_eval"])
     pools = load_pool(POOL)
     rows = []
+    skipped = [b for b in pools if int(b.split("_")[1]) >= len(tasks[b.split("_")[0]]["test"])]
+    for b in skipped:
+        del pools[b]
     per_task_outputs = Counter(k.split("_")[0] for k in pools)
     totals = Counter()
     for base in sorted(pools):
@@ -115,12 +118,15 @@ def main():
                             "outputs_correct": sum(r["selection"][str(lam)]["top2_correct"] for r in rows),
                             "outputs_top2_changed": sum(r["selection"][str(lam)]["top2_changed"] for r in rows)}
     summary = {"pool": os.path.basename(os.path.dirname(POOL)), "outputs": len(rows), "tasks": len(per_task_outputs),
+               "skipped_no_ground_truth": sorted(skipped),
                "totals": dict(totals), "scores": scores, "rows": rows}
     with open(OUT, "w") as fh:
         json.dump(summary, fh, indent=1)
     print(f"pool {summary['pool']}: {summary['tasks']} tasks, {summary['outputs']} test outputs, "
           f"{sum(r['beams'] for r in rows)} beams, {totals['distinct']} distinct candidates "
           f"({totals['wrong']} wrong)")
+    if skipped:
+        print(f"skipped {len(skipped)} outputs with no ground truth in the public copy: {sorted(skipped)}")
     print(f"flagged {totals['flagged']}: {totals['flagged_wrong']} wrong, {totals['flagged_correct']} correct")
     print(f"{'output':12s} {'beams':>5s} {'dist':>4s} {'c_in':>4s} {'c_rank':>6s} {'flag':>4s} {'base':>5s} {'l=1':>5s} {'hard':>5s} {'chg1':>5s} kgmon_top3 classes")
     for r in rows:

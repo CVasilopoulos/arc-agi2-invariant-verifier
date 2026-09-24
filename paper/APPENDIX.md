@@ -203,6 +203,30 @@ Failures by family: palette_exact 14, keep_nonbg 5, nonbg_ge 4, palette_subset 4
 
 Commit run (`runs/commit2`, four evaluation tasks, five outputs): 91 beams, 35 distinct candidates, 31 wrong; one flagged (a wrong near miss violating keep_nonbg), no correct candidate flagged; 3.0/4 for λ in {0, 0.5, 1, 2, ∞}. See `results/nvarc_pool_commit2.json`.
 
+5-hour run (`runs/pools5h`, kernel `chrisvas123/arc-agi-2-nvarc-candidate-pools-5-h` version 1, 2026-09-23): a private copy of the submission notebook with `EVAL_ALL_TASKS = True` and the solver budget cut to five hours, otherwise identical (same model, test-time training, decoding and scoring); not a submission. The solver finished 109 of the 120 public evaluation tasks in sorted task-id order, giving 146 test outputs, 2,188 beams and 1,101 distinct candidates (53 correct, 1,048 wrong). Three further outputs (4a21e3da_1, abc82100_1, b6f77b65_2) are in the pools but have no ground truth in the public ARC-AGI-2 repository copy and are excluded. Pools: `runs/pools5h/nvarc_candidate_pools.tar.gz`; scored by `experiments/nvarc_pool.py` into `results/nvarc_pool_5h.json` with the per-output rows printed in `results/nvarc_pool_5h.log`.
+
+The safe six flag 170 candidates, every one wrong; none of the 53 correct candidates is flagged (ε = 0 on this pool, against 0.8% on the frontier-LLM attempts).
+
+| Candidate class | In pools | Flagged | Flagged % |
+|---|---|---|---|
+| correct | 53 | 0 | 0.0 |
+| near miss | 341 | 59 | 17.3 |
+| wrong palette | 205 | 66 | 32.2 |
+| wrong content | 376 | 33 | 8.8 |
+| wrong shape | 126 | 12 | 9.5 |
+
+Violated families (a candidate can violate several): nonbg_ge 94, palette_exact 67, hist_equal 59, input_in_output 13, keep_nonbg 9, palette_subset 2. 44 of the 146 outputs have at least one flagged candidate.
+
+| λ | Task score /109 | Outputs with a correct top 2 (of 146) | Outputs whose top 2 changed |
+|---|---|---|---|
+| 0 | 31.667 | 42 | 0 |
+| 0.5 | 31.667 | 42 | 2 |
+| 1 | 31.667 | 42 | 2 |
+| 2 | 31.667 | 42 | 5 |
+| ∞ | 32.667 | 43 | 17 |
+
+The shipped rule (λ=1) changes the top 2 on two outputs, neither of which has a correct candidate anywhere in its pool: 9bbf930d_0 (ten flagged near misses, violating hist_equal and nonbg_ge) and c4d067a0_0 (one flagged wrong-content candidate violating keep_nonbg). Its measured effect on the score is therefore zero, as in the commit run. The hard veto changes 17 outputs, gains 31f7f899_0 and loses none, which is the predicted behaviour on an unsaturated pool (kgmon puts a correct candidate in the top 2 for 42 of 146 outputs here, far from the saturation at which vetoes start to cost).
+
 ## ARC-AGI-1 (`ATTEMPT_SET=v1 experiments/ablations.py`, `results/ablations_v1.json`)
 
 73 systems, 400 evaluation tasks, 419 test outputs, 56,779 valid attempts (23,900 wrong, 32,879 correct). The safe six flag 23.9% of wrong attempts and 0.40% of correct ones (11.0% of near misses); all sixteen families flag 37.9% and 6.5% (23.7% of near misses). The one failing true output is 19bb5feb (palette_exact), so ε = 1/419 and the hard veto never loses with the safe six. The strongest 2 to 16 systems vote at 98.6 to 99.0 pass@2 and no rule changes them.

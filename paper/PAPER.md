@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Every ARC task states its rule through a few demonstration pairs. We turn properties that hold on all demonstrations into a verifier: no model, no training. Six families selected on the ARC-AGI-2 training set hold for 98.2% of ARC-AGI-2 evaluation outputs (99.8% on ARC-AGI-1, 95.0% on ConceptARC), flag 24% of wrong attempts from 68 frontier systems and 0.8% of correct ones. As a one-vote penalty it never lowered average pass@2 in pooled selection, even with unsafe families, and raised pass@1 for 24 of 68 systems; ablations show that safety comes from the penalty, not the family list, and that hand-designed invariants see few near misses. Our NVARC-based submission ships it (public score 29.72); there its measured effect is zero.
+Every ARC task states its rule through a few demonstration pairs. We turn properties that hold on all demonstrations into a verifier: no model, no training. Six families selected on the ARC-AGI-2 training set hold for 98.2% of ARC-AGI-2 evaluation outputs (99.8% on ARC-AGI-1, 95.0% on ConceptARC), flag 24% of wrong attempts from 68 frontier systems and 0.8% of correct ones. As a one-vote penalty it never lowered average pass@2 in pooled selection, even with unsafe families, and raised pass@1 for 24 of 68 systems; ablations show that safety comes from the penalty, not the family list, and that hand-designed invariants see few near misses. Our NVARC-based submission ships it (public score 29.72); on its pools for 109 evaluation tasks it flags 170 candidates, none correct, and changes no score.
 
 ## 1. Introduction
 
@@ -22,7 +22,7 @@ Winning Kaggle systems score candidates with the generator: augmented likelihood
 
 **Using flags.** (a) *Attempt order:* swap the two attempts when only attempt 1 is flagged. (b) *Pool selection:* rank candidates by support (votes, or NVARC hits) minus λ·flag; λ=∞ is a hard veto; we use λ=1, one vote per violated invariant.
 
-**Kaggle submission.** We fork the NVARC 2025 notebook (Qwen3-4B, per-task test-time training, augmented decoding, kgmon; configuration in the appendix) and change only the final ranking, to kgmon − 1·flag; with no flags the output is identical.
+**Kaggle submission.** We fork the NVARC 2025 notebook (Qwen3-4B, per-task test-time training, augmented decoding, kgmon; appendix) and change only the final ranking, to kgmon − 1·flag; with no flags the output is identical.
 
 ## 4. Why it works, and when it hurts
 
@@ -36,7 +36,7 @@ Intervals: 95% task bootstraps; tables in the appendix.
 
 ![Fig. 1](figures/fig1_soundness.png)
 
-**Soundness (Fig. 1).** The six safe families jointly hold for 99.2% of ARC-AGI-2 training, 98.2% of ARC-AGI-2 evaluation, 99.8% of ARC-AGI-1 evaluation and 95.0% of ConceptARC outputs (160 tasks by other authors), and reject 91% of unrelated tasks' outputs.
+**Soundness (Fig. 1).** The six safe families jointly hold for 99.2% of ARC-AGI-2 training, 98.2% of ARC-AGI-2 evaluation, 99.8% of ARC-AGI-1 evaluation and 95.0% of ConceptARC outputs (160 tasks by other authors), and reject 91% of unrelated outputs.
 
 ![Fig. 2](figures/fig2_attempts.png)
 
@@ -63,18 +63,18 @@ Intervals: 95% task bootstraps; tables in the appendix.
 
 The one-vote penalty is never negative on average, losing to plain voting in 14 of 1,000 random pools; the hard veto turns negative on the full pool, on the coverage-gap tasks. On ARC-AGI-1 (coverage gaps 0.24%) both rules are non-negative at every size.
 
-**Ablations** (new draws). Removing palette_exact costs 1.0 of the 3.7 points gained at 4 systems; adding keep_bg, nonbg_equal or nonbg_le adds 0.3 to 0.4. Under the one-vote penalty even all sixteen families stay non-negative at every size (+3.3 at 4, +0.6 at 16, 0.0 at 68); as a hard veto they lose 7 points at 16 systems and 14 at 68; ARC-AGI-1 repeats the pattern (appendix). Pooling the strongest systems by pass@2 (top 4 vote at 91.9, above 84.9 for all 68), the penalty adds +0.2 (top 4), +1.1 [0.0, 2.8] (top 8), +0.3 (top 16); the hard veto loses on the top 4 and 16.
+**Ablations.** Removing palette_exact costs 1.0 of the 3.7 points gained at 4 systems; adding keep_bg, nonbg_equal or nonbg_le adds 0.3 to 0.4. Under the one-vote penalty even all sixteen families stay non-negative at every size (+3.3 at 4, +0.6 at 16, 0.0 at 68); as a hard veto they lose 7 points at 16 systems and 14 at 68; ARC-AGI-1 repeats the pattern (appendix). Pooling the strongest systems by pass@2 (top 4 vote at 91.9, above 84.9 for all 68), the penalty adds +0.2 (top 4), +1.1 (top 8), +0.3 (top 16); the hard veto loses on the top 4 and 16.
 
-**Theory check.** Per output, hard-veto losses rise with pool size from 0.09% (2 systems) to 0.60% (all 68), below ε·pass@2, while gains fall from 3.8% to 0.06%; one-vote losses fall to 0.00%. The penalty closes 17 to 20% of the vote-to-oracle gap at 2 to 4 systems and under 5% beyond 16.
+**Theory check.** Per output, hard-veto losses rise with pool size from 0.09% (2 systems) to 0.60% (all 68), below ε·pass@2, while gains fall from 3.8% to 0.06%; one-vote losses vanish. The penalty closes 17 to 20% of the vote-to-oracle gap at 2 to 4 systems and under 5% beyond 16.
 
-**NVARC's own candidates.** The commit run's pools (four evaluation tasks) hold 35 distinct candidates, 31 wrong; the verifier flagged one wrong near miss and no correct candidate, leaving 3.0/4 for every λ. kgmon already ranked every solved output first, and the wrong candidates are mostly near misses.
+**NVARC's own candidates.** A 5-hour copy of the submission notebook covered 109 of the 120 evaluation tasks: 146 outputs, 1,101 distinct candidates, 53 correct. It flags 170, all wrong (66 wrong-palette, 59 near misses), none correct; it reorders two outputs' top 2 and holds the score at 31.7/109 for λ≤2. A hard veto reorders 17 and gains one task, as expected for an unsaturated pool.
 
 **Kaggle leaderboard.** Public score **29.72**, submission **56275620**, notebook version 2; unmodified NVARC copies score 30.6 to 31.8.
 
 ## 6. Limitations
 
-- **Pool source:** frontier-LLM attempts; NVARC pools cover four tasks.
-- **Penalty:** λ=1 suits integer votes; kgmon mixes hits with likelihood and may want a calibrated λ.
+- **Pool source:** frontier-LLM attempts; NVARC pools cover 109 of 120 tasks.
+- **Penalty:** λ=1 suits integer votes; kgmon mixes hits with likelihood and may want calibration.
 - **Recall:** 24% of wrong LLM answers; sixteen families see only 27% of near misses.
 - **Sample size:** 120 evaluation tasks; intervals cover task sampling only.
 
@@ -84,4 +84,4 @@ The demonstrations already contain a free verifier, sound on 98% of ARC-AGI-2 ev
 
 ## AI assistance and reproducibility
 
-AI-assisted (Claude Code), human-directed. All code and this text were written by Claude (Anthropic) through Claude Code from the author's prompts, which set the question, families, safety criterion, experiments and Kaggle constraints; the author reviewed every step and is responsible for all claims. NVARC is used as published; analysis is CPU-only. Data: arcprize/ARC-AGI-2 (Apache-2.0), fchollet/ARC-AGI, ConceptARC (Moskvichev et al. 2023), arcprize attempt datasets (MIT). Code: the notebook in Project Links; analysis, results, appendix and this text at https://github.com/CVasilopoulos/arc-agi2-invariant-verifier (CC BY 4.0).
+AI-assisted (Claude Code), human-directed. All code and this text were written by Claude (Anthropic) from the author's prompts, which set the question, families, safety criterion, experiments and Kaggle constraints; the author reviewed every step and is responsible for all claims. Analysis is CPU-only. Data: arcprize/ARC-AGI-2 (Apache-2.0), fchollet/ARC-AGI, ConceptARC (Moskvichev et al. 2023), arcprize attempt datasets (MIT). Code: the notebook in Project Links; analysis, results, appendix and this text at https://github.com/CVasilopoulos/arc-agi2-invariant-verifier (CC BY 4.0).
